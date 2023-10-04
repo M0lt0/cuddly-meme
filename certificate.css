@@ -70,7 +70,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    ? margin-top: 10px;
+    margin-top: 10px;
     padding: 10px;
 }
 
@@ -176,12 +176,21 @@ body {
 
 }
 
+.filter-label button {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .option {
     width: 24px;
     height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .option-tag {
@@ -233,3 +242,7 @@ body {
 }
 
 .option-cont {}
+
+button:hover {
+    cursor: pointer;
+}
