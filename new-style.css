@@ -1,0 +1,116 @@
+
+@media (max-width:767px) {
+    .hidden-xs {
+        display: none !important
+    }
+    .dashboard-align{
+        display: inline-block;
+    }
+    header .showbox:hover .boxover {
+        visibility: hidden;
+    }
+
+    .classroom .box .academic {
+        min-height: 200px !important;
+
+    }
+
+    section {
+        font-size: 100%;
+    }
+
+    .formatMobile{
+        width: 50% !important;
+    }
+
+    .formatMobile100{
+        width: 100% !important;
+    }
+
+    .formatMobile35{
+        width: 35% !important;
+    }
+
+    .card-qtd {
+        min-width: 300px;
+    }
+
+    body .dashboard .list-process .line .item{
+        height: 65px !important;
+    }
+
+    .visible-xs-block {
+        display: block !important
+    }
+    .visible-xs-inline {
+        display: inline !important
+    }
+    .visible-xs-inline-block {
+        display: inline-block !important
+    }
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto
+    }
+
+    .modal-content {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+    }
+
+    .modal-sm {
+        width: 300px
+    }
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next,
+    .carousel-control .icon-prev {
+        width: 30px;
+        height: 30px;
+        margin-top: -10px;
+        font-size: 30px
+    }
+
+    .carousel-control .glyphicon-chevron-left,
+    .carousel-control .icon-prev {
+        margin-left: -10px
+    }
+
+    .carousel-control .glyphicon-chevron-right,
+    .carousel-control .icon-next {
+        margin-right: -10px
+    }
+
+    .carousel-caption {
+        right: 20%;
+        left: 20%;
+        padding-bottom: 30px
+    }
+
+    .carousel-indicators {
+        bottom: 20px
+    }
+}
+
+@media screen and (min-width:768px) {
+        .jumbotron {
+            padding-top: 48px;
+            padding-bottom: 48px
+        }
+
+        .container .jumbotron,
+        .container-fluid .jumbotron {
+            padding-right: 60px;
+            padding-left: 60px
+        }
+
+        .jumbotron .h1,
+        .jumbotron h1 {
+            font-size: 63px
+        }
+
+
+        }
+
+
+
+
