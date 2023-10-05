@@ -1,49 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./filter.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="label">Filtros</div>
-        <button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none">
-            <g clip-path="url(#clip0_670_80882)">
-              <path
-                d="M5.70711 6.41L10.9436 11.6464L11.2971 12L10.9436 12.3536L5.70711 17.59L6.41 18.2929L11.6464 13.0564L12 12.7029L12.3536 13.0564L17.59 18.2929L18.2929 17.59L13.0564 12.3536L12.7029 12L13.0564 11.6464L18.2929 6.41L17.59 5.70711L12.3536 10.9436L12 11.2971L11.6464 10.9436L6.41 5.70711L5.70711 6.41Z"
-                fill="#555555"
-                stroke="#555555" />
-            </g>
-            <defs>
-              <clipPath id="clip0_670_80882">
-                <rect
-                  width="24"
-                  height="24"
-                  fill="white"
-                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-      </div>
-      <div class="f-filter">
-        <p>Nome</p>
-        <input type="text" placeholder="Digite o Nome do arquivo" />
-      </div>
-      <div class="f-filter">
-        <p>Tipo do certificado</p>
-        <span> Selecione o Tipo do certificado </span>
-      </div>
-      <div class="f-filter"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./filter.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="label">Filtros</div>
+      <button>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_670_80882)">
+            <path
+              d="M5.70711 6.41L10.9436 11.6464L11.2971 12L10.9436 12.3536L5.70711 17.59L6.41 18.2929L11.6464 13.0564L12 12.7029L12.3536 13.0564L17.59 18.2929L18.2929 17.59L13.0564 12.3536L12.7029 12L13.0564 11.6464L18.2929 6.41L17.59 5.70711L12.3536 10.9436L12 11.2971L11.6464 10.9436L6.41 5.70711L5.70711 6.41Z"
+              fill="#555555" stroke="#555555" />
+          </g>
+          <defs>
+            <clipPath id="clip0_670_80882">
+              <rect width="24" height="24" fill="white" transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </button>
     </div>
-  </body>
+    <div class="f-filter">
+      <p>Nome</p>
+      <span />Digite o Nome do arquivo</span>
+    </div>
+    <div class="filter-container">
+      <p>Tipo do certificado</p>
+      <div class="s-filter">
+        <span>
+          <span> Selecione o Tipo do certificado </span>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_670_80899)">
+                <path
+                  d="M7.41039 9.29681L6.70711 10.0001L12 15.293L17.2929 10.0001L16.5896 9.29681L12.3532 13.524L12 13.8764L11.6468 13.524L7.41039 9.29681Z"
+                  fill="#4E4E4E" stroke="#555555" />
+              </g>
+              <defs>
+                <clipPath id="clip0_670_80899">
+                  <rect width="24" height="24" fill="white" transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </span>
+      </div>
+
+
+    </div>
+    <div class="filter-container">
+      <p>Status</p>
+      <div class="t-filter">
+        <span>
+          <span> Selecione o Status </span>
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_670_80899)">
+                <path
+                  d="M7.41039 9.29681L6.70711 10.0001L12 15.293L17.2929 10.0001L16.5896 9.29681L12.3532 13.524L12 13.8764L11.6468 13.524L7.41039 9.29681Z"
+                  fill="#4E4E4E" stroke="#555555" />
+              </g>
+              <defs>
+                <clipPath id="clip0_670_80899">
+                  <rect width="24" height="24" fill="white" transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </span>
+      </div>
+
+    </div>
+    <div class="footer">
+      <button>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_779_473)">
+            <path
+              d="M16.9998 5.5L18.0337 5.5L17.3918 6.31045L12.4018 12.6104L12.0106 13.1043L11.6185 12.6112L6.60848 6.31121L5.96338 5.5L6.99982 5.5L16.9998 5.5ZM13.9998 13L13.6051 12.6931L13.6052 12.693L13.6057 12.6923L13.6077 12.6897L13.6158 12.6793L13.6474 12.6387L13.7693 12.4819L14.2194 11.9027C14.6007 11.4122 15.1301 10.7312 15.7226 9.9693C16.9073 8.44595 18.3446 6.59878 19.3548 5.30353C19.609 4.97332 19.3756 4.5 18.9598 4.5L5.04982 4.5C4.63411 4.5 4.40066 4.97326 4.65484 5.30347C5.66521 6.59894 7.10012 8.44632 8.28233 9.96971C8.87363 10.7316 9.4018 11.4126 9.78214 11.9031L10.2312 12.4824L10.3527 12.6392L10.3843 12.6799L10.3923 12.6902L10.3943 12.6928L10.3949 12.6935L10.395 12.6937L9.99982 13L10.395 12.6937L10.4998 12.8289L10.4998 13L10.4998 19C10.4998 19.2739 10.726 19.5 10.9998 19.5L12.9998 19.5C13.2737 19.5 13.4998 19.2739 13.4998 19L13.4998 13L13.4998 12.8286L13.605 12.6932L13.9998 13Z"
+              fill="white" stroke="white" />
+            <path opacity="0.3" d="M17 6L7 6L12.01 12.3L17 6Z" fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_779_473">
+              <rect width="24" height="24" fill="white" transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+            </clipPath>
+          </defs>
+        </svg>
+        <span>Filtrar</span>
+      </button>
+    </div>
+  </div>
+
+</body>
+
 </html>
