@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./user-cert.css" />
   </head>
+
   <body>
     <div class="container">
       <div class="header">
@@ -35,6 +36,7 @@
           </svg>
         </button>
       </div>
+      <hr />
       <div class="user-info">
         <ul>
           <li class="account-info">
@@ -104,41 +106,39 @@
                   fill="#062F50" />
               </svg>
             </div>
-            <div>
+            <div class="user-name">
               <span>Camila Alves</span>
-              <span>Aluno(a)</span>
+              <span class="user-type">Aluno(a)</span>
             </div>
           </li>
-          <li>
-            <div class="date">
-              <span>Atualizado em</span>
-              <span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none">
-                  <g clip-path="url(#clip0_670_83607)">
-                    <path
-                      d="M2.6665 1.99984L3.33317 1.99984L3.33317 0.666505L4.6665 0.666505L4.6665 1.99984L11.3332 1.99984L11.3332 0.666504L12.6665 0.666504L12.6665 1.99984L13.3332 1.99984C14.0665 1.99984 14.6665 2.59984 14.6665 3.33317L14.6665 13.9998C14.6665 14.7332 14.0665 15.3332 13.3332 15.3332L2.66651 15.3332C1.93317 15.3332 1.33317 14.7332 1.33317 13.9998L1.33317 3.33317C1.33317 2.59984 1.93317 1.99984 2.6665 1.99984ZM2.66651 13.9998L13.3332 13.9998L13.3332 6.6665L2.6665 6.6665L2.66651 13.9998ZM2.6665 5.33317L13.3332 5.33317L13.3332 3.33317L2.6665 3.33317L2.6665 5.33317Z"
-                      fill="#333333" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_670_83607">
-                      <rect
-                        width="16"
-                        height="16"
-                        fill="white"
-                        transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                    </clipPath>
-                  </defs></svg
-                >19/05/2023</span
-              >
-            </div>
+          <li class="date">
+            <span class="date-msg">Atualizado em</span>
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none">
+                <g clip-path="url(#clip0_670_83607)">
+                  <path
+                    d="M2.6665 1.99984L3.33317 1.99984L3.33317 0.666505L4.6665 0.666505L4.6665 1.99984L11.3332 1.99984L11.3332 0.666504L12.6665 0.666504L12.6665 1.99984L13.3332 1.99984C14.0665 1.99984 14.6665 2.59984 14.6665 3.33317L14.6665 13.9998C14.6665 14.7332 14.0665 15.3332 13.3332 15.3332L2.66651 15.3332C1.93317 15.3332 1.33317 14.7332 1.33317 13.9998L1.33317 3.33317C1.33317 2.59984 1.93317 1.99984 2.6665 1.99984ZM2.66651 13.9998L13.3332 13.9998L13.3332 6.6665L2.6665 6.6665L2.66651 13.9998ZM2.6665 5.33317L13.3332 5.33317L13.3332 3.33317L2.6665 3.33317L2.6665 5.33317Z"
+                    fill="#333333" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_670_83607">
+                    <rect
+                      width="16"
+                      height="16"
+                      fill="white"
+                      transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                  </clipPath>
+                </defs></svg
+              >19/05/2023</span
+            >
           </li>
-          <li><span> 10 em análise </span></li>
-          <li>
+          <li class="notification"><span> 10 em análise </span></li>
+          <li class="status">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -162,8 +162,8 @@
       </div>
       <div class="info">
         <ul>
-          <li>
-            <div>
+          <li class="info-selector">
+            <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -181,7 +181,9 @@
                   </clipPath>
                 </defs>
               </svg>
-              <span> Certificado(s)</span>
+            </button>
+            <span> Certificado(s)</span>
+            <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -203,7 +205,7 @@
                   </clipPath>
                 </defs>
               </svg>
-            </div>
+            </button>
           </li>
           <li><span>Confirmar tipo de certificado</span></li>
           <li><span>Adicionar horas</span></li>
@@ -214,7 +216,7 @@
       <div class="f-item">
         <ul>
           <li class="item-name">
-            <div>
+            <div class="doc-name">
               <svg
                 width="24"
                 height="25"
