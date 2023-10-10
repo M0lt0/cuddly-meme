@@ -18,7 +18,8 @@ body {
 }
 
 .container {
-    width: 100%;
+    margin-top: 20px;
+    width: 90%;
     height: 836px;
     flex-shrink: 0;
     border-radius: 24px;
@@ -26,6 +27,9 @@ body {
     /* Shadow/Large */
     box-shadow: 0px 15px 35px 0px, rgba(103, 110, 118, 0.08), 0px 5px 15px 0px, rgba(0, 0, 0, 0.12);
     padding: 32px;
+    background: var(--background-neutral, #FFF);
+    /* Shadow/Large */
+    box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
 .header {
@@ -33,7 +37,6 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 32px;
     padding: 12px;
 }
 
@@ -51,31 +54,19 @@ hr {
 }
 
 .user-info {
-    width: 1320px;
+    width: 100%;
     height: 95px;
     flex-shrink: 0;
     border-radius: 16px;
     background: var(--neutral-gray-50, #F1F1F1);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.user-info ul {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.user-info ul:first-of-type(li) {
-    width: 65px;
-    border: 2px solid black;
+    justify-content: space-between;
+    padding: 24px;
 }
 
 .info {
-    width: 1323px;
+    width: 100%px;
     height: 56px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -99,7 +90,7 @@ hr {
 
 
 .f-item {
-    width: 1323px;
+    width: 100%;
     height: 96px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -108,6 +99,8 @@ hr {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 18px;
+    gap: 48px;
+
 }
 
 .f-item ul {
@@ -116,7 +109,9 @@ hr {
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    padding: 22px;
+    margin: 18px 0px;
+
+    gap: 48px;
 
 }
 
@@ -190,19 +185,23 @@ hr {
     gap: 8px;
     border-radius: 8px;
     border: 1px solid var(--border-light, #DDD);
+    width: 100px;
+    height: 46px;
 }
 
 .feedback {
-    display: inline-flex;
+    display: flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 24px;
     border-radius: 80px;
     border: 1px solid var(--action-light-primary, #1161D8);
+    width: 160px;
+    height: 48px;
 }
 
-.feedback button {
+.feedback-btn {
     border: none;
     color: var(--action-light-primary, #1161D8);
     text-align: center;
@@ -213,26 +212,39 @@ hr {
     line-height: 24px;
     /* 133.333% */
     background: none;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
 
 }
 
-.status {
-    display: inline-flex;
-    padding: 12px 16px;
+.status-list {
+    display: flex;
+    padding: 12px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
     border-radius: 8px;
     border: 1px solid var(--border-light, #DDD);
+    color: var(--feedback-information-medium, #0079F5);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 158px;
+    height: 48px;
+    background: none;
 }
 
-.account-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: left;
-    width: 200px;
+.status-list button {
+    border: none;
+    background: none;
 }
+
 
 .user-name {
     display: flex;
@@ -257,6 +269,19 @@ hr {
     flex-direction: row;
     width: 230px;
     align-items: center;
+    color: var(--text-section, #333);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+}
+
+.approvel-date {
+    gap: 6px;
+    display: flex;
 }
 
 .date-msg {
@@ -290,17 +315,6 @@ hr {
     line-height: normal;
 }
 
-.status {
-    width: 232px;
-    height: 48px;
-    border-radius: 12px;
-    border: 1px solid var(--brand-450, #F3FBF2);
-    background: var(--action-light-contrast, #FFF);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
 
 .info-selector {
     align-items: center;
@@ -312,4 +326,39 @@ hr {
 .info-selector button {
     border: none;
     background: none;
+}
+
+.info-type {
+    width: 206px;
+}
+
+.status {
+    width: 232px;
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid var(--brand-450, #F3FBF2);
+    background: var(--action-light-contrast, #FFF);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 200px;
+}
+
+.right {
+    display: flex;
+    width: 647px;
+    align-items: center;
+    gap: 32px;
 }
