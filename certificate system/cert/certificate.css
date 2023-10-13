@@ -65,6 +65,25 @@ body {
 
 }
 
+.center-filters {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+}
+
+.center-filters>div {
+    width: 128px;
+}
+
+.cert-info .cert-filter {
+    width: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
 .cert-info * {
     display: flex;
     align-items: center;
@@ -74,18 +93,16 @@ body {
 
 .list-cont,
 .list-cont-active {
-    width: 100%;
     height: 96px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+
 }
 
 .list-cont-active {
     width: 100%;
     height: fit-content;
-    border: 2px solid yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -391,7 +408,6 @@ button {
 .cert-list-active {
     margin: 20px;
     width: 100%;
-    border: 2px solid red;
     height: 738px;
     display: flex;
     flex-direction: column;
@@ -443,6 +459,7 @@ button {
 
 .upload-info {
     display: flex;
+    align-items: center;
     flex-direction: row;
     width: 405px;
     gap: 16px;
@@ -526,5 +543,51 @@ button {
 }
 
 .upload-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 325px;
+    height: 53px;
+    gap: 4px;
+}
+
+.f-ch {
+    color: var(--text-section, #333);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.s-ch {
+    color: var(--text-lead, #888);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.green {
+    border-radius: 8px;
+    background: var(--feedback-sucess-light, #EBF5EC);
+}
+
+.red {
+    border-radius: 8px;
+    background: var(--feedback-error-light, #FEE);
+}
+
+.avial {
+    border-radius: 80px;
+    border: 1px solid var(--action-light-primary, #1161D8);
+    display: inline-flex;
+    padding: 4px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: none;
 }
