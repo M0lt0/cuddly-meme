@@ -1,6 +1,13 @@
-document.addEventListener("click",function expand(e){
-    const expandingButton = document.body.getElementsByClassName("option-active");
+const expandingButton = document.querySelector(".option-active");
+const expandingList = document.querySelector(".list-cont list-cont-active");
 
 
-});
+expandingButton.addEventListener("click", e=>{
 
+    console.log(e.target);
+    expandingList.className.toggle("list-cont-active");
+
+
+})
+
+console.log(expandingList.class);
