@@ -4,611 +4,241 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./certificate.css" />
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="top-header">
-        <div class="top-index">
-          <p class="first-index">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="8"
-              height="8"
-              viewBox="0 0 8 8"
-              fill="none">
-              <circle cx="4" cy="4" r="4" fill="#1161D8" />
-            </svg>
-
-            Meus
-          </p>
-          <p class="sec-index">
-            Certificados
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none">
-              <g clip-path="url(#clip0_670_80045)">
-                <path
-                  d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"
-                  fill="#888888" />
-              </g>
-              <defs>
-                <clipPath id="clip0_670_80045">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </p>
-        </div>
-        <button class="cert-upload">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none">
-            <g clip-path="url(#clip0_729_599)">
-              <path
-                d="M9 9.5L9.5 9.5L9.5 10L9.5 15.5L14.5 15.5L14.5 10L14.5 9.5L15 9.5L17.7929 9.5L12 3.70711L6.20711 9.5L9 9.5ZM11.6464 5.47645L12 5.12289L12.3536 5.47645L14.5236 7.64645L15.3771 8.5L14.17 8.5L13.5 8.5L13.5 14L13.5 14.5L13 14.5L11 14.5L10.5 14.5L10.5 14L10.5 8.5L9.83 8.5L8.62289 8.5L9.47645 7.64645L11.6464 5.47645ZM5.5 18.5L5.5 19.5L18.5 19.5L18.5 18.5L5.5 18.5Z"
-                fill="#1161D8"
-                stroke="#1161D8" />
-            </g>
-            <defs>
-              <clipPath id="clip0_729_599">
-                <rect
-                  width="24"
-                  height="24"
-                  fill="white"
-                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
-              </clipPath>
-            </defs>
-          </svg>
-
-          Enviar vários certificados
-        </button>
-      </div>
-      <div class="white-container">
-        <div class="certf-view">
-          <div class="time-label">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none">
-              <g clip-path="url(#clip0_670_80054)">
-                <path
-                  d="M10.5399 14.5301L8.40988 12.4001L7.34988 13.4601L10.5299 16.6401L16.5299 10.6401L15.4699 9.58006L10.5399 14.5301ZM17.3369 1.81006L21.9439 5.65506L20.6639 7.19006L16.0539 3.34706L17.3369 1.81006ZM6.66288 1.81006L7.94489 3.34606L3.33688 7.19006L2.05688 5.65406L6.66288 1.81006ZM11.9999 4.00006C7.02988 4.00006 2.99988 8.03006 2.99988 13.0001C2.99988 17.9701 7.02988 22.0001 11.9999 22.0001C16.9699 22.0001 20.9999 17.9701 20.9999 13.0001C20.9999 8.03006 16.9699 4.00006 11.9999 4.00006ZM11.9999 20.0001C8.13988 20.0001 4.99988 16.8601 4.99988 13.0001C4.99988 9.14006 8.13988 6.00006 11.9999 6.00006C15.8599 6.00006 18.9999 9.14006 18.9999 13.0001C18.9999 16.8601 15.8599 20.0001 11.9999 20.0001Z"
-                  fill="#359549" />
-              </g>
-              <defs>
-                <clipPath id="clip0_670_80054">
-                  <rect width="24" height="24" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-            <p>46 de 88 horas validadas</p>
-          </div>
-          <div class="filter-label">
-            <button>
-              <span>Baixar orientações</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none">
-                <path
-                  d="M16 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V8L16 3ZM19 19H5V5H15V9H19V19ZM7 17H17V15H7V17ZM12 7H7V9H12V7ZM7 13H17V11H7V13Z"
-                  fill="#1161D8" />
-              </svg>
-            </button>
-            <hr />
-            <p>Filtrar por</p>
-            <button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none">
-                <g clip-path="url(#clip0_670_80060)">
-                  <path
-                    d="M14 18L10 18L10 16L14 16V18ZM21 6V8L3 8V6L21 6ZM18 13L6 13V11L18 11V13Z"
-                    fill="#1161D8" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_670_80060">
-                    <rect
-                      width="24"
-                      height="24"
-                      fill="white"
-                      transform="matrix(-1 0 0 1 24 0)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="cert-info">
-          <div class="cert-filter">
-            Certificado(s)<svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none">
-              <g clip-path="url(#clip0_670_80072)">
-                <path
-                  d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
-                  fill="#888888" />
-              </g>
-              <defs>
-                <clipPath id="clip0_670_80072">
-                  <rect
-                    width="16"
-                    height="16"
-                    fill="white"
-                    transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div class="center-filters">
-            <div>
-              Em análise
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none">
-                <g clip-path="url(#clip0_670_80072)">
-                  <path
-                    d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
-                    fill="#888888" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_670_80072">
-                    <rect
-                      width="16"
-                      height="16"
-                      fill="white"
-                      transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div>
-              Indeferido
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none">
-                <g clip-path="url(#clip0_670_80072)">
-                  <path
-                    d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
-                    fill="#888888" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_670_80072">
-                    <rect
-                      width="16"
-                      height="16"
-                      fill="white"
-                      transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <div>
-              Deferido
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none">
-                <g clip-path="url(#clip0_670_80072)">
-                  <path
-                    d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
-                    fill="#888888" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_670_80072">
-                    <rect
-                      width="16"
-                      height="16"
-                      fill="white"
-                      transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-          </div>
-          <div>
-            Validado(s)
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none">
-              <g clip-path="url(#clip0_670_80072)">
-                <path
-                  d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
-                  fill="#888888" />
-              </g>
-              <defs>
-                <clipPath id="clip0_670_80072">
-                  <rect
-                    width="16"
-                    height="16"
-                    fill="white"
-                    transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none">
-              <g clip-path="url(#clip0_670_80078)">
-                <path
-                  opacity="0.3"
-                  d="M8.00016 2.66663C10.9402 2.66663 13.3335 5.05996 13.3335 7.99996C13.3335 10.94 10.9402 13.3333 8.00016 13.3333C5.06016 13.3333 2.66683 10.94 2.66683 7.99996C2.66683 5.05996 5.06016 2.66663 8.00016 2.66663ZM7.3335 11.3333L8.66683 11.3333L8.66683 7.33329L7.3335 7.33329L7.3335 11.3333ZM7.3335 5.99996L8.66683 5.99996L8.66683 4.66663L7.3335 4.66663L7.3335 5.99996Z"
-                  fill="#333333" />
-                <path
-                  d="M8.6665 4.66671L7.33317 4.66671L7.33317 6.00004L8.6665 6.00004L8.6665 4.66671ZM8.6665 7.33337L7.33317 7.33337L7.33317 11.3334L8.6665 11.3334L8.6665 7.33337ZM7.99984 1.33337C11.6798 1.33337 14.6665 4.32004 14.6665 8.00004C14.6665 11.68 11.6798 14.6667 7.99984 14.6667C4.31984 14.6667 1.33317 11.68 1.33317 8.00004C1.33317 4.32004 4.31984 1.33337 7.99984 1.33337ZM7.99984 13.3334C10.9398 13.3334 13.3332 10.94 13.3332 8.00004C13.3332 5.06004 10.9398 2.66671 7.99984 2.66671C5.05984 2.66671 2.6665 5.06004 2.6665 8.00004C2.6665 10.94 5.05984 13.3334 7.99984 13.3334Z"
-                  fill="#333333" />
-              </g>
-              <defs>
-                <clipPath id="clip0_670_80078">
-                  <rect
-                    width="16"
-                    height="16"
-                    fill="white"
-                    transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                </clipPath>
-              </defs>
-            </svg>
-            Horas validadas
+    <section class="neo-standard">
+      <div class="container-fluid">
+        <div class="row title-standard blue wow fadeIn" data-wow-delay=".6s">
+          <div class="col-12 d-flex justify-content-between align-items-center">
+            <h2>
+              Meus
+              <span>Certificados</span>
+            </h2>
+            <a href="" title="Enviar vários certificados">
+              <div class="bt bt-border-bluelinght-1 bt-radius cert-upload">
+                <span class="material-icons-outlined"> upload </span>
+                Enviar vários certificados
+              </div>
+            </a>
           </div>
         </div>
 
-        <div class="cert-list">
-          <div class="list-cont">
-            <ul>
-              <li class="f-col">
-                <button class="option">
+        <div class="row">
+          <div class="col-12 wow fadeIn" data-wow-delay=".6s">
+            <!-- Molto code -->
+            <div class="white-container">
+              <div class="certf-view">
+                <div class="time-label">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none">
-                    <g clip-path="url(#clip0_670_80084)">
+                    <g clip-path="url(#clip0_670_80054)">
                       <path
-                        d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
-                        fill="#555555" />
+                        d="M10.5399 14.5301L8.40988 12.4001L7.34988 13.4601L10.5299 16.6401L16.5299 10.6401L15.4699 9.58006L10.5399 14.5301ZM17.3369 1.81006L21.9439 5.65506L20.6639 7.19006L16.0539 3.34706L17.3369 1.81006ZM6.66288 1.81006L7.94489 3.34606L3.33688 7.19006L2.05688 5.65406L6.66288 1.81006ZM11.9999 4.00006C7.02988 4.00006 2.99988 8.03006 2.99988 13.0001C2.99988 17.9701 7.02988 22.0001 11.9999 22.0001C16.9699 22.0001 20.9999 17.9701 20.9999 13.0001C20.9999 8.03006 16.9699 4.00006 11.9999 4.00006ZM11.9999 20.0001C8.13988 20.0001 4.99988 16.8601 4.99988 13.0001C4.99988 9.14006 8.13988 6.00006 11.9999 6.00006C15.8599 6.00006 18.9999 9.14006 18.9999 13.0001C18.9999 16.8601 15.8599 20.0001 11.9999 20.0001Z"
+                        fill="#359549" />
                     </g>
                     <defs>
-                      <clipPath id="clip0_670_80084">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                      <clipPath id="clip0_670_80054">
+                        <rect width="24" height="24" fill="white" />
                       </clipPath>
                     </defs>
                   </svg>
-                  <!-- <svg
-                    width="88"
-                    height="88"
-                    viewBox="0 0 88 88"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect
-                      x="40"
-                      y="40"
-                      width="8"
-                      height="8"
-                      rx="4"
-                      fill="#D60000" />
-                  </svg> -->
-                </button>
-                <span class="option-tag"
-                  >Termo de participação em audiência</span
-                >
-              </li>
-              <li class="s-col">
-                <span class="f-notification">1 em análise </span>
-                <span class="s-notification">2 indeferido(s)</span>
-                <span class="t-notification">1 deferido(s)</span>
-              </li>
-              <li class="t-col">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none">
-                  <g clip-path="url(#clip0_670_80096)">
-                    <path
-                      d="M11.0599 5.05337L6.66658 9.44671L4.27325 7.06004L3.33325 8.00004L6.66658 11.3334L11.9999 6.00004L11.0599 5.05337ZM7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 13.3334C5.05325 13.3334 2.66658 10.9467 2.66658 8.00004C2.66659 5.05337 5.05325 2.66671 7.99992 2.66671C10.9466 2.66671 13.3333 5.05338 13.3333 8.00004C13.3333 10.9467 10.9466 13.3334 7.99992 13.3334Z"
-                      fill="#B4B4B4" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_670_80096">
-                      <rect width="16" height="16" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <div class="col-info">
-                  <span>1 de 3 certificado(s)</span>
-                  <span>validado(s)</span>
+                  <p>46 de 88 horas validadas</p>
                 </div>
-              </li>
-              <li class="fr-col">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none">
-                  <g clip-path="url(#clip0_670_80091)">
-                    <path
-                      d="M7.66691 5.33333L8.66691 5.33333L8.66691 9.33333L5.50024 11.2333L5.00024 10.4133L7.66691 8.83333L7.66691 5.33333ZM4.44224 1.20667L1.37091 3.77L2.22424 4.79333L5.29757 2.23133L4.44224 1.20667ZM11.5582 1.20667L10.7036 2.23067L13.7756 4.79333L14.6289 3.76933L11.5582 1.20667ZM8.00024 2.66667C11.3136 2.66667 14.0002 5.35333 14.0002 8.66667C14.0002 11.98 11.3136 14.6667 8.00024 14.6667C4.68691 14.6667 2.00024 11.98 2.00024 8.66667C2.00024 5.35333 4.68691 2.66667 8.00024 2.66667ZM8.00024 13.3333C10.5736 13.3333 12.6669 11.24 12.6669 8.66667C12.6669 6.09333 10.5736 4 8.00024 4C5.42691 4 3.33357 6.09333 3.33357 8.66667C3.33357 11.24 5.42691 13.3333 8.00024 13.3333Z"
-                      fill="#CCCCCC" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_670_80091">
-                      <rect
-                        width="16"
-                        height="16"
-                        fill="white"
-                        transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                <div class="col-info">
-                  <span>6 de 12 hora(s)</span>
-                  <span>validadas</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="cert-list-active">
-          <div class="cert-list-header">
-            <div class="list-cont list-cont-active">
-              <ul>
-                <li class="f-col f-col-active">
-                  <button class="option-active">
+                <div class="filter-label">
+                  <button>
+                    <span>Baixar orientações</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
                       viewBox="0 0 24 24"
                       fill="none">
-                      <g clip-path="url(#clip0_670_80084)">
+                      <path
+                        d="M16 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V8L16 3ZM19 19H5V5H15V9H19V19ZM7 17H17V15H7V17ZM12 7H7V9H12V7ZM7 13H17V11H7V13Z"
+                        fill="#1161D8" />
+                    </svg>
+                  </button>
+
+                  <p>Filtrar por</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none">
+                      <g clip-path="url(#clip0_670_80060)">
                         <path
-                          d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
-                          fill="#555555" />
+                          d="M14 18L10 18L10 16L14 16V18ZM21 6V8L3 8V6L21 6ZM18 13L6 13V11L18 11V13Z"
+                          fill="#1161D8" />
                       </g>
                       <defs>
-                        <clipPath id="clip0_670_80084">
+                        <clipPath id="clip0_670_80060">
                           <rect
                             width="24"
                             height="24"
                             fill="white"
-                            transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                            transform="matrix(-1 0 0 1 24 0)" />
                         </clipPath>
                       </defs>
                     </svg>
-                    <!-- <svg
-                      width="88"
-                      height="88"
-                      viewBox="0 0 88 88"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <rect
-                        x="40"
-                        y="40"
-                        width="8"
-                        height="8"
-                        rx="4"
-                        fill="#D60000" />
-                    </svg> -->
                   </button>
-                  <span class="option-tag option-tag-active"
-                    >Termo de participação em audiência</span
-                  >
-                </li>
-                <li class="s-col">
-                  <span class="f-notification">1 em análise </span>
-                  <span class="s-notification">2 indeferido(s)</span>
-                  <span class="t-notification">1 deferido(s)</span>
-                </li>
-                <li class="t-col t-col-active">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none">
-                    <g clip-path="url(#clip0_670_80096)">
-                      <path
-                        d="M11.0599 5.05337L6.66658 9.44671L4.27325 7.06004L3.33325 8.00004L6.66658 11.3334L11.9999 6.00004L11.0599 5.05337ZM7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 13.3334C5.05325 13.3334 2.66658 10.9467 2.66658 8.00004C2.66659 5.05337 5.05325 2.66671 7.99992 2.66671C10.9466 2.66671 13.3333 5.05338 13.3333 8.00004C13.3333 10.9467 10.9466 13.3334 7.99992 13.3334Z"
-                        fill="#B4B4B4" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_670_80096">
-                        <rect width="16" height="16" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-                  <div class="col-info">
-                    <span>1 de 3 certificado(s)</span>
-                    <span>validado(s)</span>
-                  </div>
-                </li>
-                <li class="fr-col fr-col-active">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none">
-                    <g clip-path="url(#clip0_670_80091)">
-                      <path
-                        d="M7.66691 5.33333L8.66691 5.33333L8.66691 9.33333L5.50024 11.2333L5.00024 10.4133L7.66691 8.83333L7.66691 5.33333ZM4.44224 1.20667L1.37091 3.77L2.22424 4.79333L5.29757 2.23133L4.44224 1.20667ZM11.5582 1.20667L10.7036 2.23067L13.7756 4.79333L14.6289 3.76933L11.5582 1.20667ZM8.00024 2.66667C11.3136 2.66667 14.0002 5.35333 14.0002 8.66667C14.0002 11.98 11.3136 14.6667 8.00024 14.6667C4.68691 14.6667 2.00024 11.98 2.00024 8.66667C2.00024 5.35333 4.68691 2.66667 8.00024 2.66667ZM8.00024 13.3333C10.5736 13.3333 12.6669 11.24 12.6669 8.66667C12.6669 6.09333 10.5736 4 8.00024 4C5.42691 4 3.33357 6.09333 3.33357 8.66667C3.33357 11.24 5.42691 13.3333 8.00024 13.3333Z"
-                        fill="#CCCCCC" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_670_80091">
-                        <rect
-                          width="16"
-                          height="16"
-                          fill="white"
-                          transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <div class="col-info">
-                    <span>6 de 12 hora(s)</span>
-                    <span>validadas</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="cert-active-status">
-            <div class="upload-area">
-              <span class="mb-size"
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="17"
-                  viewBox="0 0 16 17"
-                  fill="none">
-                  <path
-                    d="M7.33325 10.5002H8.66659V11.8335H7.33325V10.5002ZM7.33325 5.16683H8.66659V9.16683H7.33325V5.16683ZM7.99325 1.8335C4.31325 1.8335 1.33325 4.82016 1.33325 8.50016C1.33325 12.1802 4.31325 15.1668 7.99325 15.1668C11.6799 15.1668 14.6666 12.1802 14.6666 8.50016C14.6666 4.82016 11.6799 1.8335 7.99325 1.8335ZM7.99992 13.8335C5.05325 13.8335 2.66659 11.4468 2.66659 8.50016C2.66659 5.5535 5.05325 3.16683 7.99992 3.16683C10.9466 3.16683 13.3333 5.5535 13.3333 8.50016C13.3333 11.4468 10.9466 13.8335 7.99992 13.8335Z"
-                    fill="#A0A0A0" />
-                </svg>
-                <span>Máximos de 100 MB</span>
-              </span>
-              <div class="upload-info">
-                <span class="upload-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="33"
-                    viewBox="0 0 32 33"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_37122)">
-                      <path
-                        opacity="0.3"
-                        d="M13.1067 11.1668H14.6667V19.1668H17.3334V11.1668H18.8934L16 8.27344L13.1067 11.1668Z"
-                        fill="#1161D8" />
-                      <path
-                        d="M16.0001 4.5L6.66675 13.8333H12.0001V21.8333H20.0001V13.8333H25.3334L16.0001 4.5ZM17.3334 11.1667V19.1667H14.6667V11.1667H13.1067L16.0001 8.27333L18.8934 11.1667H17.3334ZM6.66675 24.5H25.3334V27.1667H6.66675V24.5Z"
-                        fill="#1161D8" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_883_37122">
-                        <rect
-                          width="32"
-                          height="32"
-                          fill="white"
-                          transform="translate(0 0.5)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                <div class="upload-text">
-                  <span class="f-ch">Adicione aqui um certificado</span>
-                  <span class="s-ch"
-                    >Solte arquivo(s) aqui ou selecione para enviar</span
-                  >
                 </div>
               </div>
-            </div>
-            <div class="docs-list">
-              <ul>
-                <li class="doc-name">
-                  <svg
+              <div class="cert-info">
+                <div class="cert-filter">
+                  Certificado(s)<svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
                     fill="none">
-                    <g clip-path="url(#clip0_883_31833)">
+                    <g clip-path="url(#clip0_670_80072)">
                       <path
-                        opacity="0.87"
-                        d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
-                        fill="#1161D8" />
+                        d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
+                        fill="#888888" />
                     </g>
                     <defs>
-                      <clipPath id="clip0_883_31833">
+                      <clipPath id="clip0_670_80072">
                         <rect
-                          width="24"
-                          height="24"
+                          width="16"
+                          height="16"
                           fill="white"
-                          transform="translate(0 0.5)" />
+                          transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>
-                    <span>
-                      [nome do arquivo] <br />Enviado em 19/05/2023 15:04</span
-                    >
-                  </span>
-                </li>
-                <li class="activation-state"><span>Em análise</span></li>
-                <li class="user-active">
+                </div>
+                <div class="center-filters">
+                  <div>
+                    Em análise
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none">
+                      <g clip-path="url(#clip0_670_80072)">
+                        <path
+                          d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
+                          fill="#888888" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_670_80072">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    Indeferido
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none">
+                      <g clip-path="url(#clip0_670_80072)">
+                        <path
+                          d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
+                          fill="#888888" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_670_80072">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div>
+                    Deferido
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none">
+                      <g clip-path="url(#clip0_670_80072)">
+                        <path
+                          d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
+                          fill="#888888" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_670_80072">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  Validado(s)
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
                     fill="none">
-                    <path
-                      d="M12 1.3335L11.9933 5.3335L9.33333 8.00016L11.9933 10.6735L12 14.6668L4 14.6668L4 10.6668L6.66667 8.00016L4 5.34016L4 1.3335L12 1.3335ZM5.33333 11.0002L5.33333 13.3335L10.6667 13.3335L10.6667 11.0002L8 8.3335L5.33333 11.0002Z"
-                      fill="#B4B4B4" />
-                  </svg>
-                  <span>Não avaliado</span>
-                </li>
-                <li class="active-feedback">
-                  <button>Feedback</button>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_31843)">
+                    <g clip-path="url(#clip0_670_80072)">
                       <path
-                        d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
-                        fill="#CCCCCC" />
+                        d="M10.2535 10.3333L5.74683 10.3333L8.00016 12.5867L10.2535 10.3333ZM12.6668 9.33333L8.00016 14L3.3335 9.33333L12.6668 9.33333ZM12.6668 6.66667L3.3335 6.66667L8.00016 2L12.6668 6.66667Z"
+                        fill="#888888" />
                     </g>
                     <defs>
-                      <clipPath id="clip0_883_31843">
+                      <clipPath id="clip0_670_80072">
+                        <rect
+                          width="16"
+                          height="16"
+                          fill="white"
+                          transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none">
+                    <g clip-path="url(#clip0_670_80078)">
+                      <path
+                        opacity="0.3"
+                        d="M8.00016 2.66663C10.9402 2.66663 13.3335 5.05996 13.3335 7.99996C13.3335 10.94 10.9402 13.3333 8.00016 13.3333C5.06016 13.3333 2.66683 10.94 2.66683 7.99996C2.66683 5.05996 5.06016 2.66663 8.00016 2.66663ZM7.3335 11.3333L8.66683 11.3333L8.66683 7.33329L7.3335 7.33329L7.3335 11.3333ZM7.3335 5.99996L8.66683 5.99996L8.66683 4.66663L7.3335 4.66663L7.3335 5.99996Z"
+                        fill="#333333" />
+                      <path
+                        d="M8.6665 4.66671L7.33317 4.66671L7.33317 6.00004L8.6665 6.00004L8.6665 4.66671ZM8.6665 7.33337L7.33317 7.33337L7.33317 11.3334L8.6665 11.3334L8.6665 7.33337ZM7.99984 1.33337C11.6798 1.33337 14.6665 4.32004 14.6665 8.00004C14.6665 11.68 11.6798 14.6667 7.99984 14.6667C4.31984 14.6667 1.33317 11.68 1.33317 8.00004C1.33317 4.32004 4.31984 1.33337 7.99984 1.33337ZM7.99984 13.3334C10.9398 13.3334 13.3332 10.94 13.3332 8.00004C13.3332 5.06004 10.9398 2.66671 7.99984 2.66671C5.05984 2.66671 2.6665 5.06004 2.6665 8.00004C2.6665 10.94 5.05984 13.3334 7.99984 13.3334Z"
+                        fill="#333333" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_670_80078">
                         <rect
                           width="16"
                           height="16"
@@ -617,265 +247,681 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>4h</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <div class="docs-list">
-              <ul>
-                <li class="doc-name">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_31833)">
-                      <path
-                        opacity="0.87"
-                        d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
-                        fill="#1161D8" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_883_31833">
-                        <rect
+                  Horas validadas
+                </div>
+              </div>
+
+              <div class="cert-list">
+                <div class="list-cont">
+                  <ul>
+                    <li class="f-col">
+                      <button class="option">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
                           width="24"
                           height="24"
-                          fill="white"
-                          transform="translate(0 0.5)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span>
-                    <span>
-                      [nome do arquivo] <br />Enviado em 19/05/2023 15:04</span
-                    >
-                  </span>
-                </li>
-                <li class="activation-state green"><span>Deferido</span></li>
-                <li class="user-active">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="21"
-                    viewBox="0 0 17 21"
-                    fill="none">
-                    <path
-                      d="M16.0103 18.151C11.2916 21.7843 4.70986 21.7552 0.0234375 18.0804L3.45826 16.4703C3.62184 16.3934 3.77884 16.3032 3.92767 16.2006C3.97285 16.1696 4.01803 16.1371 4.06108 16.1032C4.43491 15.8172 4.74262 15.4539 4.9632 15.038C5.12996 14.7186 5.24074 14.3728 5.29073 14.0159C5.3252 13.7843 5.34266 13.5505 5.34297 13.3164C5.34297 13.0722 5.33661 12.8279 5.32814 12.5837C5.3232 12.4242 5.31897 12.2639 5.31685 12.1044C5.31403 11.8809 5.31167 11.6571 5.30979 11.4331L5.45097 11.5037L5.81803 11.6936L5.98814 11.7225L7.95614 12.0571L10.1529 12.4312L10.2192 14.69L10.2411 15.4284L10.2517 15.787V15.8089L10.3223 15.8385L11.1037 16.1562L16.0103 18.151Z"
-                      fill="#F2A196" />
-                    <path
-                      d="M10.251 15.8087C9.98982 15.839 9.54511 15.7381 9.29946 15.6047C8.38181 15.0978 7.9237 14.687 7.43734 14.3284C6.85852 13.9007 5.33381 12.5284 5.33381 12.5284C5.32887 12.3689 5.31899 12.263 5.31687 12.1049C5.31405 11.8814 5.3117 11.6576 5.30981 11.4336L5.45099 11.5042L5.81805 11.6941L5.98817 11.723L7.95617 12.0576L10.1529 12.4317L10.2192 14.6905L10.2411 15.4289L10.2517 15.7875V15.8087H10.251Z"
-                      fill="#E88870" />
-                    <path
-                      d="M16.0103 18.1508C11.2916 21.7841 4.70986 21.755 0.0234375 18.0802L3.45826 16.4701C3.62184 16.3932 3.77884 16.303 3.92767 16.2004C3.97285 16.1694 4.01803 16.1369 4.06108 16.103C5.72344 17.2861 7.99214 18.0322 9.9545 17.1491C10.4218 16.9374 10.851 16.5957 11.1051 16.1567L16.0103 18.1508Z"
-                      fill="#1161D8" />
-                    <path
-                      d="M14.7468 4.01337C14.7405 4.05502 14.7327 4.09596 14.7235 4.1369C14.6746 4.34676 14.5959 4.54856 14.4899 4.73619L14.4842 4.74607C14.444 4.81666 14.4009 4.88725 14.3544 4.95784C14.2307 5.13905 14.0959 5.31233 13.9506 5.47666L13.8638 5.57337C13.8052 5.63902 13.7459 5.70325 13.6866 5.76678C14.0007 5.69619 14.3049 5.98913 14.3607 6.30537C14.4165 6.6216 14.2901 6.94066 14.1341 7.22302C13.8609 7.72278 13.4671 8.05525 13.1205 8.48937C12.8607 8.81266 12.7167 9.19525 12.4337 9.50443L12.4125 9.52772C11.6649 10.3127 10.4847 10.4962 9.50212 10.8315C9.14918 10.9529 5.32189 12.04 5.32189 12.2771C5.32189 12.2256 4.94706 11.8536 4.47483 11.4011C2.78071 9.79243 2.22377 7.30702 3.23177 5.17525C4.3153 2.88113 6.776 1.24419 9.11953 0.457839C9.85224 0.212192 10.6838 0.0470156 11.3784 0.387251C12.0729 0.727486 12.4188 1.78278 11.8428 2.29807C12.2051 2.02398 12.6557 1.89304 13.1085 1.93031C13.5267 1.95651 13.921 2.13388 14.2181 2.42937C14.4535 2.66577 14.6226 2.95981 14.7087 3.28207C14.7725 3.52047 14.7855 3.76963 14.7468 4.01337Z"
-                      fill="#845161" />
-                    <path
-                      d="M14.7467 4.01341C14.7403 4.05506 14.7326 4.096 14.7234 4.13694C14.717 4.14894 14.7107 4.16165 14.7043 4.17577C14.6246 4.35789 14.5879 4.55412 14.4926 4.73624L14.4869 4.74612C14.4467 4.81671 14.4036 4.8873 14.357 4.95789C14.2346 5.13997 14.0997 5.31333 13.9533 5.47671L13.8636 5.57341C13.805 5.63906 13.7457 5.7033 13.6864 5.76683C14.0006 5.69624 14.3048 5.98918 14.3606 6.30541C14.4163 6.62165 14.29 6.94071 14.134 7.22306C13.8608 7.72283 13.4669 8.0553 13.1203 8.48941C12.8606 8.81271 12.7166 9.1953 12.4335 9.50447C12.1049 9.11368 11.8956 8.63658 11.8307 8.13012C11.7149 7.19412 11.7855 6.17412 11.7537 5.22683C11.734 4.63106 11.542 4.52094 11.8991 4.03883C12.1864 3.68448 12.5186 3.36911 12.8874 3.10071C13.1754 2.91083 13.546 2.88118 13.8897 2.92989C14.1893 2.97085 14.4719 3.09289 14.7071 3.28283C14.7713 3.5209 14.7848 3.7698 14.7467 4.01341Z"
-                      fill="#69303A" />
-                    <ellipse
-                      cx="4.61504"
-                      cy="9.45586"
-                      rx="1.2"
-                      ry="1.2"
-                      fill="#F2A196" />
-                    <ellipse
-                      cx="4.99574"
-                      cy="9.4557"
-                      rx="1.07435"
-                      ry="1.07435"
-                      fill="#E88870" />
-                    <path
-                      d="M5.01172 8.32642L5.3209 12.2088L10.0108 15.0944C10.6844 15.3454 11.4385 15.0435 11.7529 14.397C12.1102 13.6676 12.42 12.9159 12.6804 12.1467C12.8668 11.5932 13.0489 11.025 13.0665 10.4363C13.0842 9.8476 12.9169 9.2363 12.7136 8.69277C12.6924 8.6356 12.5795 8.45983 12.5894 8.39983C12.668 7.92925 12.7461 7.46007 12.8237 6.9923C12.9127 6.46219 13.0263 5.90877 12.8943 5.37583C12.744 4.76454 12.2823 4.50407 11.9025 4.04736C10.903 5.33489 9.25972 6.06266 7.82466 6.8003C7.08701 7.18148 5.01172 8.32642 5.01172 8.32642Z"
-                      fill="#F2A196" />
-                    <path
-                      d="M12.8098 11.7498C12.5055 12.9441 12.1688 14.1745 11.9182 14.6164C11.7305 14.946 11.4686 15.0095 11.0542 15.1105C10.0148 15.3484 8.92328 15.1176 8.06905 14.4794L5.30975 12.2573C5.2674 11.8415 5.23916 11.778 5.21869 11.3601C5.20881 11.1709 5.14811 10.9818 5.19328 10.7954C5.20569 10.8933 5.24753 10.9851 5.31328 11.0587C5.64717 11.5119 6.03681 12.0236 6.59164 12.21C7.17046 12.4041 7.82905 12.4345 8.38811 12.1606C8.87446 11.922 9.35093 11.6107 9.85846 11.4145C10.196 11.2751 10.5603 11.2122 10.925 11.2302C11.4432 11.2655 11.6648 11.4992 12.0439 11.8076C12.1681 11.9093 12.3072 12.0152 12.4674 12.0194C12.6481 12.0159 12.6573 11.8662 12.8098 11.7498Z"
-                      fill="#845161" />
-                    <path
-                      d="M8.47918 8.1709C8.90977 8.1709 8.90977 8.83302 8.47918 8.83655H8.45942C8.02883 8.83655 8.02883 8.17443 8.45942 8.1709H8.47918Z"
-                      fill="#111111" />
-                    <path
-                      d="M12.017 8.07275C12.4172 8.07628 12.4172 8.68687 12.017 8.6904H11.9994C11.5998 8.6904 11.5998 8.07628 11.9994 8.07275H12.017Z"
-                      fill="#111111" />
-                    <path
-                      d="M10.273 7.97949C10.2674 8.0042 11.2161 10.5298 11.2161 10.5298L9.94971 10.5913"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M7.27441 7.49102C7.9279 7.35609 8.60003 7.33722 9.26006 7.43526"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M11.4424 7.49899C11.8458 7.4054 12.2616 7.37657 12.6741 7.41358"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M9.87678 11.9265C10.2735 12.0637 10.7035 12.0716 11.105 11.9491C11.1481 11.9357 11.1297 11.8672 11.0867 11.8785C10.6975 11.9977 10.2804 11.9901 9.89583 11.8566C9.85278 11.8418 9.83442 11.9095 9.87678 11.9272V11.9265Z"
-                      fill="#F2A196" />
-                  </svg>
-                  <span>Manuel Caldas</span>
-                </li>
-                <li class="active-feedback avial">
-                  <button>Feedback</button>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_31843)">
-                      <path
-                        d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
-                        fill="#CCCCCC" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_883_31843">
-                        <rect
+                          viewBox="0 0 24 24"
+                          fill="none">
+                          <g clip-path="url(#clip0_670_80084)">
+                            <path
+                              d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
+                              fill="#555555" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_670_80084">
+                              <rect
+                                width="24"
+                                height="24"
+                                fill="white"
+                                transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </button>
+                      <!-- <span class="option-tag">Termo de participação em audiência</span> -->
+                      <div class="option-ifo">
+                        <span class="option-tag"
+                          >Termo de participação em audiência</span
+                        >
+                        <button id="Civil-but">Cível</button>
+                      </div>
+                    </li>
+                    <li class="s-col">
+                      <span class="f-notification">1 em análise </span>
+                      <span class="s-notification">2 indeferido(s)</span>
+                      <span class="t-notification">1 deferido(s)</span>
+                    </li>
+                    <li class="t-col">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_670_80096)">
+                          <path
+                            d="M11.0599 5.05337L6.66658 9.44671L4.27325 7.06004L3.33325 8.00004L6.66658 11.3334L11.9999 6.00004L11.0599 5.05337ZM7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 13.3334C5.05325 13.3334 2.66658 10.9467 2.66658 8.00004C2.66659 5.05337 5.05325 2.66671 7.99992 2.66671C10.9466 2.66671 13.3333 5.05338 13.3333 8.00004C13.3333 10.9467 10.9466 13.3334 7.99992 13.3334Z"
+                            fill="#B4B4B4" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_670_80096">
+                            <rect width="16" height="16" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+
+                      <div class="col-info">
+                        <span>1 de 3 certificado(s)</span>
+                        <span>validado(s)</span>
+                      </div>
+                    </li>
+                    <li class="fr-col">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none">
+                        <g clip-path="url(#clip0_670_80091)">
+                          <path
+                            d="M7.66691 5.33333L8.66691 5.33333L8.66691 9.33333L5.50024 11.2333L5.00024 10.4133L7.66691 8.83333L7.66691 5.33333ZM4.44224 1.20667L1.37091 3.77L2.22424 4.79333L5.29757 2.23133L4.44224 1.20667ZM11.5582 1.20667L10.7036 2.23067L13.7756 4.79333L14.6289 3.76933L11.5582 1.20667ZM8.00024 2.66667C11.3136 2.66667 14.0002 5.35333 14.0002 8.66667C14.0002 11.98 11.3136 14.6667 8.00024 14.6667C4.68691 14.6667 2.00024 11.98 2.00024 8.66667C2.00024 5.35333 4.68691 2.66667 8.00024 2.66667ZM8.00024 13.3333C10.5736 13.3333 12.6669 11.24 12.6669 8.66667C12.6669 6.09333 10.5736 4 8.00024 4C5.42691 4 3.33357 6.09333 3.33357 8.66667C3.33357 11.24 5.42691 13.3333 8.00024 13.3333Z"
+                            fill="#CCCCCC" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_670_80091">
+                            <rect
+                              width="16"
+                              height="16"
+                              fill="white"
+                              transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <div class="col-info">
+                        <span>6 de 12 hora(s)</span>
+                        <span>validadas</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cert-list-active">
+                <div class="cert-list-header">
+                  <div class="list-cont list-cont-active">
+                    <ul>
+                      <li class="f-col f-col-active">
+                        <button class="option-active">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31933)">
+                              <path
+                                d="M16.59 8.58984L12 13.1698L7.41 8.58984L6 9.99984L12 15.9998L18 9.99984L16.59 8.58984Z"
+                                fill="#1161D8" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31933">
+                                <rect
+                                  width="24"
+                                  height="24"
+                                  fill="white"
+                                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </button>
+                        <div class="option-ifo">
+                          <span class="option-tag option-tag-active"
+                            >Termo de participação em audiência</span
+                          >
+                          <button id="Civil-but">Cível</button>
+                        </div>
+                      </li>
+                      <li class="s-col">
+                        <span class="f-notification">1 em análise </span>
+                        <span class="s-notification">2 indeferido(s)</span>
+                        <span class="t-notification">1 deferido(s)</span>
+                      </li>
+                      <li class="t-col t-col-active">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
-                          fill="white"
-                          transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span>3h</span>
-                </li>
-              </ul>
-            </div>
-            <hr />
-            <div class="docs-list">
-              <ul>
-                <li class="doc-name">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="25"
-                    viewBox="0 0 24 25"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_31833)">
-                      <path
-                        opacity="0.87"
-                        d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
-                        fill="#1161D8" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_883_31833">
-                        <rect
-                          width="24"
-                          height="24"
-                          fill="white"
-                          transform="translate(0 0.5)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span>
-                    <span>
-                      [nome do arquivo] <br />Enviado em 19/05/2023 15:04</span
-                    >
-                  </span>
-                </li>
-                <li class="activation-state red"><span>Indeferido</span></li>
-                <li class="user-active">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="21"
-                    viewBox="0 0 17 21"
-                    fill="none">
-                    <path
-                      d="M16.0103 18.151C11.2916 21.7843 4.70986 21.7552 0.0234375 18.0804L3.45826 16.4703C3.62184 16.3934 3.77884 16.3032 3.92767 16.2006C3.97285 16.1696 4.01803 16.1371 4.06108 16.1032C4.43491 15.8172 4.74262 15.4539 4.9632 15.038C5.12996 14.7186 5.24074 14.3728 5.29073 14.0159C5.3252 13.7843 5.34266 13.5505 5.34297 13.3164C5.34297 13.0722 5.33661 12.8279 5.32814 12.5837C5.3232 12.4242 5.31897 12.2639 5.31685 12.1044C5.31403 11.8809 5.31167 11.6571 5.30979 11.4331L5.45097 11.5037L5.81803 11.6936L5.98814 11.7225L7.95614 12.0571L10.1529 12.4312L10.2192 14.69L10.2411 15.4284L10.2517 15.787V15.8089L10.3223 15.8385L11.1037 16.1562L16.0103 18.151Z"
-                      fill="#F2A196" />
-                    <path
-                      d="M10.251 15.8087C9.98982 15.839 9.54511 15.7381 9.29946 15.6047C8.38181 15.0978 7.9237 14.687 7.43734 14.3284C6.85852 13.9007 5.33381 12.5284 5.33381 12.5284C5.32887 12.3689 5.31899 12.263 5.31687 12.1049C5.31405 11.8814 5.3117 11.6576 5.30981 11.4336L5.45099 11.5042L5.81805 11.6941L5.98817 11.723L7.95617 12.0576L10.1529 12.4317L10.2192 14.6905L10.2411 15.4289L10.2517 15.7875V15.8087H10.251Z"
-                      fill="#E88870" />
-                    <path
-                      d="M16.0103 18.1508C11.2916 21.7841 4.70986 21.755 0.0234375 18.0802L3.45826 16.4701C3.62184 16.3932 3.77884 16.303 3.92767 16.2004C3.97285 16.1694 4.01803 16.1369 4.06108 16.103C5.72344 17.2861 7.99214 18.0322 9.9545 17.1491C10.4218 16.9374 10.851 16.5957 11.1051 16.1567L16.0103 18.1508Z"
-                      fill="#1161D8" />
-                    <path
-                      d="M14.7468 4.01337C14.7405 4.05502 14.7327 4.09596 14.7235 4.1369C14.6746 4.34676 14.5959 4.54856 14.4899 4.73619L14.4842 4.74607C14.444 4.81666 14.4009 4.88725 14.3544 4.95784C14.2307 5.13905 14.0959 5.31233 13.9506 5.47666L13.8638 5.57337C13.8052 5.63902 13.7459 5.70325 13.6866 5.76678C14.0007 5.69619 14.3049 5.98913 14.3607 6.30537C14.4165 6.6216 14.2901 6.94066 14.1341 7.22302C13.8609 7.72278 13.4671 8.05525 13.1205 8.48937C12.8607 8.81266 12.7167 9.19525 12.4337 9.50443L12.4125 9.52772C11.6649 10.3127 10.4847 10.4962 9.50212 10.8315C9.14918 10.9529 5.32189 12.04 5.32189 12.2771C5.32189 12.2256 4.94706 11.8536 4.47483 11.4011C2.78071 9.79243 2.22377 7.30702 3.23177 5.17525C4.3153 2.88113 6.776 1.24419 9.11953 0.457839C9.85224 0.212192 10.6838 0.0470156 11.3784 0.387251C12.0729 0.727486 12.4188 1.78278 11.8428 2.29807C12.2051 2.02398 12.6557 1.89304 13.1085 1.93031C13.5267 1.95651 13.921 2.13388 14.2181 2.42937C14.4535 2.66577 14.6226 2.95981 14.7087 3.28207C14.7725 3.52047 14.7855 3.76963 14.7468 4.01337Z"
-                      fill="#845161" />
-                    <path
-                      d="M14.7467 4.01341C14.7403 4.05506 14.7326 4.096 14.7234 4.13694C14.717 4.14894 14.7107 4.16165 14.7043 4.17577C14.6246 4.35789 14.5879 4.55412 14.4926 4.73624L14.4869 4.74612C14.4467 4.81671 14.4036 4.8873 14.357 4.95789C14.2346 5.13997 14.0997 5.31333 13.9533 5.47671L13.8636 5.57341C13.805 5.63906 13.7457 5.7033 13.6864 5.76683C14.0006 5.69624 14.3048 5.98918 14.3606 6.30541C14.4163 6.62165 14.29 6.94071 14.134 7.22306C13.8608 7.72283 13.4669 8.0553 13.1203 8.48941C12.8606 8.81271 12.7166 9.1953 12.4335 9.50447C12.1049 9.11368 11.8956 8.63658 11.8307 8.13012C11.7149 7.19412 11.7855 6.17412 11.7537 5.22683C11.734 4.63106 11.542 4.52094 11.8991 4.03883C12.1864 3.68448 12.5186 3.36911 12.8874 3.10071C13.1754 2.91083 13.546 2.88118 13.8897 2.92989C14.1893 2.97085 14.4719 3.09289 14.7071 3.28283C14.7713 3.5209 14.7848 3.7698 14.7467 4.01341Z"
-                      fill="#69303A" />
-                    <ellipse
-                      cx="4.61504"
-                      cy="9.45586"
-                      rx="1.2"
-                      ry="1.2"
-                      fill="#F2A196" />
-                    <ellipse
-                      cx="4.99574"
-                      cy="9.4557"
-                      rx="1.07435"
-                      ry="1.07435"
-                      fill="#E88870" />
-                    <path
-                      d="M5.01172 8.32642L5.3209 12.2088L10.0108 15.0944C10.6844 15.3454 11.4385 15.0435 11.7529 14.397C12.1102 13.6676 12.42 12.9159 12.6804 12.1467C12.8668 11.5932 13.0489 11.025 13.0665 10.4363C13.0842 9.8476 12.9169 9.2363 12.7136 8.69277C12.6924 8.6356 12.5795 8.45983 12.5894 8.39983C12.668 7.92925 12.7461 7.46007 12.8237 6.9923C12.9127 6.46219 13.0263 5.90877 12.8943 5.37583C12.744 4.76454 12.2823 4.50407 11.9025 4.04736C10.903 5.33489 9.25972 6.06266 7.82466 6.8003C7.08701 7.18148 5.01172 8.32642 5.01172 8.32642Z"
-                      fill="#F2A196" />
-                    <path
-                      d="M12.8098 11.7498C12.5055 12.9441 12.1688 14.1745 11.9182 14.6164C11.7305 14.946 11.4686 15.0095 11.0542 15.1105C10.0148 15.3484 8.92328 15.1176 8.06905 14.4794L5.30975 12.2573C5.2674 11.8415 5.23916 11.778 5.21869 11.3601C5.20881 11.1709 5.14811 10.9818 5.19328 10.7954C5.20569 10.8933 5.24753 10.9851 5.31328 11.0587C5.64717 11.5119 6.03681 12.0236 6.59164 12.21C7.17046 12.4041 7.82905 12.4345 8.38811 12.1606C8.87446 11.922 9.35093 11.6107 9.85846 11.4145C10.196 11.2751 10.5603 11.2122 10.925 11.2302C11.4432 11.2655 11.6648 11.4992 12.0439 11.8076C12.1681 11.9093 12.3072 12.0152 12.4674 12.0194C12.6481 12.0159 12.6573 11.8662 12.8098 11.7498Z"
-                      fill="#845161" />
-                    <path
-                      d="M8.47918 8.1709C8.90977 8.1709 8.90977 8.83302 8.47918 8.83655H8.45942C8.02883 8.83655 8.02883 8.17443 8.45942 8.1709H8.47918Z"
-                      fill="#111111" />
-                    <path
-                      d="M12.017 8.07275C12.4172 8.07628 12.4172 8.68687 12.017 8.6904H11.9994C11.5998 8.6904 11.5998 8.07628 11.9994 8.07275H12.017Z"
-                      fill="#111111" />
-                    <path
-                      d="M10.273 7.97949C10.2674 8.0042 11.2161 10.5298 11.2161 10.5298L9.94971 10.5913"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M7.27441 7.49102C7.9279 7.35609 8.60003 7.33722 9.26006 7.43526"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M11.4424 7.49899C11.8458 7.4054 12.2616 7.37657 12.6741 7.41358"
-                      stroke="#111111"
-                      stroke-width="0.3" />
-                    <path
-                      d="M9.87678 11.9265C10.2735 12.0637 10.7035 12.0716 11.105 11.9491C11.1481 11.9357 11.1297 11.8672 11.0867 11.8785C10.6975 11.9977 10.2804 11.9901 9.89583 11.8566C9.85278 11.8418 9.83442 11.9095 9.87678 11.9272V11.9265Z"
-                      fill="#F2A196" />
-                  </svg>
-                  <span>Manuel Caldas</span>
-                </li>
-                <li class="active-feedback avial">
-                  <button>Feedback</button>
-                </li>
-                <li>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none">
-                    <g clip-path="url(#clip0_883_31843)">
-                      <path
-                        d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
-                        fill="#CCCCCC" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_883_31843">
-                        <rect
+                          viewBox="0 0 16 16"
+                          fill="none">
+                          <g clip-path="url(#clip0_670_80096)">
+                            <path
+                              d="M11.0599 5.05337L6.66658 9.44671L4.27325 7.06004L3.33325 8.00004L6.66658 11.3334L11.9999 6.00004L11.0599 5.05337ZM7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 13.3334C5.05325 13.3334 2.66658 10.9467 2.66658 8.00004C2.66659 5.05337 5.05325 2.66671 7.99992 2.66671C10.9466 2.66671 13.3333 5.05338 13.3333 8.00004C13.3333 10.9467 10.9466 13.3334 7.99992 13.3334Z"
+                              fill="#B4B4B4" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_670_80096">
+                              <rect width="16" height="16" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+
+                        <div class="col-info">
+                          <span>1 de 3 certificado(s)</span>
+                          <span>validado(s)</span>
+                        </div>
+                      </li>
+                      <li class="fr-col fr-col-active">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
                           width="16"
                           height="16"
-                          fill="white"
-                          transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                  <span>2h</span>
-                </li>
-              </ul>
+                          viewBox="0 0 16 16"
+                          fill="none">
+                          <g clip-path="url(#clip0_670_80091)">
+                            <path
+                              d="M7.66691 5.33333L8.66691 5.33333L8.66691 9.33333L5.50024 11.2333L5.00024 10.4133L7.66691 8.83333L7.66691 5.33333ZM4.44224 1.20667L1.37091 3.77L2.22424 4.79333L5.29757 2.23133L4.44224 1.20667ZM11.5582 1.20667L10.7036 2.23067L13.7756 4.79333L14.6289 3.76933L11.5582 1.20667ZM8.00024 2.66667C11.3136 2.66667 14.0002 5.35333 14.0002 8.66667C14.0002 11.98 11.3136 14.6667 8.00024 14.6667C4.68691 14.6667 2.00024 11.98 2.00024 8.66667C2.00024 5.35333 4.68691 2.66667 8.00024 2.66667ZM8.00024 13.3333C10.5736 13.3333 12.6669 11.24 12.6669 8.66667C12.6669 6.09333 10.5736 4 8.00024 4C5.42691 4 3.33357 6.09333 3.33357 8.66667C3.33357 11.24 5.42691 13.3333 8.00024 13.3333Z"
+                              fill="#CCCCCC" />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_670_80091">
+                              <rect
+                                width="16"
+                                height="16"
+                                fill="white"
+                                transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                        <div class="col-info">
+                          <span>6 de 12 hora(s)</span>
+                          <span>validadas</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="cert-active-status">
+                    <div class="upload-area">
+                      <span class="mb-size">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="17"
+                          viewBox="0 0 16 17"
+                          fill="none">
+                          <path
+                            d="M7.33325 10.5002H8.66659V11.8335H7.33325V10.5002ZM7.33325 5.16683H8.66659V9.16683H7.33325V5.16683ZM7.99325 1.8335C4.31325 1.8335 1.33325 4.82016 1.33325 8.50016C1.33325 12.1802 4.31325 15.1668 7.99325 15.1668C11.6799 15.1668 14.6666 12.1802 14.6666 8.50016C14.6666 4.82016 11.6799 1.8335 7.99325 1.8335ZM7.99992 13.8335C5.05325 13.8335 2.66659 11.4468 2.66659 8.50016C2.66659 5.5535 5.05325 3.16683 7.99992 3.16683C10.9466 3.16683 13.3333 5.5535 13.3333 8.50016C13.3333 11.4468 10.9466 13.8335 7.99992 13.8335Z"
+                            fill="#A0A0A0" />
+                        </svg>
+                        <span>Máximos de 100 MB</span>
+                      </span>
+                      <div class="upload-info">
+                        <span class="upload-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="33"
+                            viewBox="0 0 32 33"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_37122)">
+                              <path
+                                opacity="0.3"
+                                d="M13.1067 11.1668H14.6667V19.1668H17.3334V11.1668H18.8934L16 8.27344L13.1067 11.1668Z"
+                                fill="#1161D8" />
+                              <path
+                                d="M16.0001 4.5L6.66675 13.8333H12.0001V21.8333H20.0001V13.8333H25.3334L16.0001 4.5ZM17.3334 11.1667V19.1667H14.6667V11.1667H13.1067L16.0001 8.27333L18.8934 11.1667H17.3334ZM6.66675 24.5H25.3334V27.1667H6.66675V24.5Z"
+                                fill="#1161D8" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_37122">
+                                <rect
+                                  width="32"
+                                  height="32"
+                                  fill="white"
+                                  transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                        <div class="upload-text">
+                          <span class="f-ch">Adicione aqui um certificado</span>
+                          <span class="s-ch"
+                            >Solte arquivo(s) aqui ou selecione para
+                            enviar</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="docs-list">
+                      <ul>
+                        <li class="doc-name">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31833)">
+                              <path
+                                opacity="0.87"
+                                d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
+                                fill="#1161D8" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31833">
+                                <rect
+                                  width="24"
+                                  height="24"
+                                  fill="white"
+                                  transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>
+                            <span>
+                              [nome do arquivo] <br />Enviado em 19/05/2023
+                              15:04</span
+                            >
+                          </span>
+                        </li>
+                        <li class="activation-state">
+                          <span>Em análise</span>
+                        </li>
+                        <li class="user-active">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none">
+                            <path
+                              d="M12 1.3335L11.9933 5.3335L9.33333 8.00016L11.9933 10.6735L12 14.6668L4 14.6668L4 10.6668L6.66667 8.00016L4 5.34016L4 1.3335L12 1.3335ZM5.33333 11.0002L5.33333 13.3335L10.6667 13.3335L10.6667 11.0002L8 8.3335L5.33333 11.0002Z"
+                              fill="#B4B4B4" />
+                          </svg>
+                          <span>Não avaliado</span>
+                        </li>
+                        <li class="inactive-feedback">
+                          <button>Feedback</button>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31843)">
+                              <path
+                                d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
+                                fill="#CCCCCC" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31843">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>4h</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="docs-list">
+                      <ul>
+                        <li class="doc-name">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31833)">
+                              <path
+                                opacity="0.87"
+                                d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
+                                fill="#1161D8" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31833">
+                                <rect
+                                  width="24"
+                                  height="24"
+                                  fill="white"
+                                  transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>
+                            <span>
+                              [nome do arquivo] <br />Enviado em 19/05/2023
+                              15:04</span
+                            >
+                          </span>
+                        </li>
+                        <li class="activation-state active-green">
+                          <span>Deferido</span>
+                        </li>
+                        <li class="user-active">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="21"
+                            viewBox="0 0 17 21"
+                            fill="none">
+                            <path
+                              d="M16.0103 18.151C11.2916 21.7843 4.70986 21.7552 0.0234375 18.0804L3.45826 16.4703C3.62184 16.3934 3.77884 16.3032 3.92767 16.2006C3.97285 16.1696 4.01803 16.1371 4.06108 16.1032C4.43491 15.8172 4.74262 15.4539 4.9632 15.038C5.12996 14.7186 5.24074 14.3728 5.29073 14.0159C5.3252 13.7843 5.34266 13.5505 5.34297 13.3164C5.34297 13.0722 5.33661 12.8279 5.32814 12.5837C5.3232 12.4242 5.31897 12.2639 5.31685 12.1044C5.31403 11.8809 5.31167 11.6571 5.30979 11.4331L5.45097 11.5037L5.81803 11.6936L5.98814 11.7225L7.95614 12.0571L10.1529 12.4312L10.2192 14.69L10.2411 15.4284L10.2517 15.787V15.8089L10.3223 15.8385L11.1037 16.1562L16.0103 18.151Z"
+                              fill="#F2A196" />
+                            <path
+                              d="M10.251 15.8087C9.98982 15.839 9.54511 15.7381 9.29946 15.6047C8.38181 15.0978 7.9237 14.687 7.43734 14.3284C6.85852 13.9007 5.33381 12.5284 5.33381 12.5284C5.32887 12.3689 5.31899 12.263 5.31687 12.1049C5.31405 11.8814 5.3117 11.6576 5.30981 11.4336L5.45099 11.5042L5.81805 11.6941L5.98817 11.723L7.95617 12.0576L10.1529 12.4317L10.2192 14.6905L10.2411 15.4289L10.2517 15.7875V15.8087H10.251Z"
+                              fill="#E88870" />
+                            <path
+                              d="M16.0103 18.1508C11.2916 21.7841 4.70986 21.755 0.0234375 18.0802L3.45826 16.4701C3.62184 16.3932 3.77884 16.303 3.92767 16.2004C3.97285 16.1694 4.01803 16.1369 4.06108 16.103C5.72344 17.2861 7.99214 18.0322 9.9545 17.1491C10.4218 16.9374 10.851 16.5957 11.1051 16.1567L16.0103 18.1508Z"
+                              fill="#1161D8" />
+                            <path
+                              d="M14.7468 4.01337C14.7405 4.05502 14.7327 4.09596 14.7235 4.1369C14.6746 4.34676 14.5959 4.54856 14.4899 4.73619L14.4842 4.74607C14.444 4.81666 14.4009 4.88725 14.3544 4.95784C14.2307 5.13905 14.0959 5.31233 13.9506 5.47666L13.8638 5.57337C13.8052 5.63902 13.7459 5.70325 13.6866 5.76678C14.0007 5.69619 14.3049 5.98913 14.3607 6.30537C14.4165 6.6216 14.2901 6.94066 14.1341 7.22302C13.8609 7.72278 13.4671 8.05525 13.1205 8.48937C12.8607 8.81266 12.7167 9.19525 12.4337 9.50443L12.4125 9.52772C11.6649 10.3127 10.4847 10.4962 9.50212 10.8315C9.14918 10.9529 5.32189 12.04 5.32189 12.2771C5.32189 12.2256 4.94706 11.8536 4.47483 11.4011C2.78071 9.79243 2.22377 7.30702 3.23177 5.17525C4.3153 2.88113 6.776 1.24419 9.11953 0.457839C9.85224 0.212192 10.6838 0.0470156 11.3784 0.387251C12.0729 0.727486 12.4188 1.78278 11.8428 2.29807C12.2051 2.02398 12.6557 1.89304 13.1085 1.93031C13.5267 1.95651 13.921 2.13388 14.2181 2.42937C14.4535 2.66577 14.6226 2.95981 14.7087 3.28207C14.7725 3.52047 14.7855 3.76963 14.7468 4.01337Z"
+                              fill="#845161" />
+                            <path
+                              d="M14.7467 4.01341C14.7403 4.05506 14.7326 4.096 14.7234 4.13694C14.717 4.14894 14.7107 4.16165 14.7043 4.17577C14.6246 4.35789 14.5879 4.55412 14.4926 4.73624L14.4869 4.74612C14.4467 4.81671 14.4036 4.8873 14.357 4.95789C14.2346 5.13997 14.0997 5.31333 13.9533 5.47671L13.8636 5.57341C13.805 5.63906 13.7457 5.7033 13.6864 5.76683C14.0006 5.69624 14.3048 5.98918 14.3606 6.30541C14.4163 6.62165 14.29 6.94071 14.134 7.22306C13.8608 7.72283 13.4669 8.0553 13.1203 8.48941C12.8606 8.81271 12.7166 9.1953 12.4335 9.50447C12.1049 9.11368 11.8956 8.63658 11.8307 8.13012C11.7149 7.19412 11.7855 6.17412 11.7537 5.22683C11.734 4.63106 11.542 4.52094 11.8991 4.03883C12.1864 3.68448 12.5186 3.36911 12.8874 3.10071C13.1754 2.91083 13.546 2.88118 13.8897 2.92989C14.1893 2.97085 14.4719 3.09289 14.7071 3.28283C14.7713 3.5209 14.7848 3.7698 14.7467 4.01341Z"
+                              fill="#69303A" />
+                            <ellipse
+                              cx="4.61504"
+                              cy="9.45586"
+                              rx="1.2"
+                              ry="1.2"
+                              fill="#F2A196" />
+                            <ellipse
+                              cx="4.99574"
+                              cy="9.4557"
+                              rx="1.07435"
+                              ry="1.07435"
+                              fill="#E88870" />
+                            <path
+                              d="M5.01172 8.32642L5.3209 12.2088L10.0108 15.0944C10.6844 15.3454 11.4385 15.0435 11.7529 14.397C12.1102 13.6676 12.42 12.9159 12.6804 12.1467C12.8668 11.5932 13.0489 11.025 13.0665 10.4363C13.0842 9.8476 12.9169 9.2363 12.7136 8.69277C12.6924 8.6356 12.5795 8.45983 12.5894 8.39983C12.668 7.92925 12.7461 7.46007 12.8237 6.9923C12.9127 6.46219 13.0263 5.90877 12.8943 5.37583C12.744 4.76454 12.2823 4.50407 11.9025 4.04736C10.903 5.33489 9.25972 6.06266 7.82466 6.8003C7.08701 7.18148 5.01172 8.32642 5.01172 8.32642Z"
+                              fill="#F2A196" />
+                            <path
+                              d="M12.8098 11.7498C12.5055 12.9441 12.1688 14.1745 11.9182 14.6164C11.7305 14.946 11.4686 15.0095 11.0542 15.1105C10.0148 15.3484 8.92328 15.1176 8.06905 14.4794L5.30975 12.2573C5.2674 11.8415 5.23916 11.778 5.21869 11.3601C5.20881 11.1709 5.14811 10.9818 5.19328 10.7954C5.20569 10.8933 5.24753 10.9851 5.31328 11.0587C5.64717 11.5119 6.03681 12.0236 6.59164 12.21C7.17046 12.4041 7.82905 12.4345 8.38811 12.1606C8.87446 11.922 9.35093 11.6107 9.85846 11.4145C10.196 11.2751 10.5603 11.2122 10.925 11.2302C11.4432 11.2655 11.6648 11.4992 12.0439 11.8076C12.1681 11.9093 12.3072 12.0152 12.4674 12.0194C12.6481 12.0159 12.6573 11.8662 12.8098 11.7498Z"
+                              fill="#845161" />
+                            <path
+                              d="M8.47918 8.1709C8.90977 8.1709 8.90977 8.83302 8.47918 8.83655H8.45942C8.02883 8.83655 8.02883 8.17443 8.45942 8.1709H8.47918Z"
+                              fill="#111111" />
+                            <path
+                              d="M12.017 8.07275C12.4172 8.07628 12.4172 8.68687 12.017 8.6904H11.9994C11.5998 8.6904 11.5998 8.07628 11.9994 8.07275H12.017Z"
+                              fill="#111111" />
+                            <path
+                              d="M10.273 7.97949C10.2674 8.0042 11.2161 10.5298 11.2161 10.5298L9.94971 10.5913"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M7.27441 7.49102C7.9279 7.35609 8.60003 7.33722 9.26006 7.43526"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M11.4424 7.49899C11.8458 7.4054 12.2616 7.37657 12.6741 7.41358"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M9.87678 11.9265C10.2735 12.0637 10.7035 12.0716 11.105 11.9491C11.1481 11.9357 11.1297 11.8672 11.0867 11.8785C10.6975 11.9977 10.2804 11.9901 9.89583 11.8566C9.85278 11.8418 9.83442 11.9095 9.87678 11.9272V11.9265Z"
+                              fill="#F2A196" />
+                          </svg>
+                          <span>Manuel Caldas</span>
+                        </li>
+                        <li class="active-feedback avial">
+                          <button>Feedback</button>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31843)">
+                              <path
+                                d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
+                                fill="#CCCCCC" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31843">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>3h</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="docs-list">
+                      <ul>
+                        <li class="doc-name">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="25"
+                            viewBox="0 0 24 25"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31833)">
+                              <path
+                                opacity="0.87"
+                                d="M17 7.5L13 7.5L13 9.5L17 9.5C18.65 9.5 20 10.85 20 12.5C20 14.15 18.65 15.5 17 15.5L13 15.5L13 17.5L17 17.5C19.76 17.5 22 15.26 22 12.5C22 9.74 19.76 7.5 17 7.5ZM11 15.5L7 15.5C5.35 15.5 4 14.15 4 12.5C4 10.85 5.35 9.5 7 9.5L11 9.5L11 7.5L7 7.5C4.24 7.5 2 9.74 2 12.5C2 15.26 4.24 17.5 7 17.5L11 17.5L11 15.5ZM8 11.5L16 11.5L16 13.5L8 13.5L8 11.5Z"
+                                fill="#1161D8" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31833">
+                                <rect
+                                  width="24"
+                                  height="24"
+                                  fill="white"
+                                  transform="translate(0 0.5)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>
+                            <span>
+                              [nome do arquivo] <br />Enviado em 19/05/2023
+                              15:04</span
+                            >
+                          </span>
+                        </li>
+                        <li class="activation-state active-red">
+                          <span>Indeferido</span>
+                        </li>
+                        <li class="user-active">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="21"
+                            viewBox="0 0 17 21"
+                            fill="none">
+                            <path
+                              d="M16.0103 18.151C11.2916 21.7843 4.70986 21.7552 0.0234375 18.0804L3.45826 16.4703C3.62184 16.3934 3.77884 16.3032 3.92767 16.2006C3.97285 16.1696 4.01803 16.1371 4.06108 16.1032C4.43491 15.8172 4.74262 15.4539 4.9632 15.038C5.12996 14.7186 5.24074 14.3728 5.29073 14.0159C5.3252 13.7843 5.34266 13.5505 5.34297 13.3164C5.34297 13.0722 5.33661 12.8279 5.32814 12.5837C5.3232 12.4242 5.31897 12.2639 5.31685 12.1044C5.31403 11.8809 5.31167 11.6571 5.30979 11.4331L5.45097 11.5037L5.81803 11.6936L5.98814 11.7225L7.95614 12.0571L10.1529 12.4312L10.2192 14.69L10.2411 15.4284L10.2517 15.787V15.8089L10.3223 15.8385L11.1037 16.1562L16.0103 18.151Z"
+                              fill="#F2A196" />
+                            <path
+                              d="M10.251 15.8087C9.98982 15.839 9.54511 15.7381 9.29946 15.6047C8.38181 15.0978 7.9237 14.687 7.43734 14.3284C6.85852 13.9007 5.33381 12.5284 5.33381 12.5284C5.32887 12.3689 5.31899 12.263 5.31687 12.1049C5.31405 11.8814 5.3117 11.6576 5.30981 11.4336L5.45099 11.5042L5.81805 11.6941L5.98817 11.723L7.95617 12.0576L10.1529 12.4317L10.2192 14.6905L10.2411 15.4289L10.2517 15.7875V15.8087H10.251Z"
+                              fill="#E88870" />
+                            <path
+                              d="M16.0103 18.1508C11.2916 21.7841 4.70986 21.755 0.0234375 18.0802L3.45826 16.4701C3.62184 16.3932 3.77884 16.303 3.92767 16.2004C3.97285 16.1694 4.01803 16.1369 4.06108 16.103C5.72344 17.2861 7.99214 18.0322 9.9545 17.1491C10.4218 16.9374 10.851 16.5957 11.1051 16.1567L16.0103 18.1508Z"
+                              fill="#1161D8" />
+                            <path
+                              d="M14.7468 4.01337C14.7405 4.05502 14.7327 4.09596 14.7235 4.1369C14.6746 4.34676 14.5959 4.54856 14.4899 4.73619L14.4842 4.74607C14.444 4.81666 14.4009 4.88725 14.3544 4.95784C14.2307 5.13905 14.0959 5.31233 13.9506 5.47666L13.8638 5.57337C13.8052 5.63902 13.7459 5.70325 13.6866 5.76678C14.0007 5.69619 14.3049 5.98913 14.3607 6.30537C14.4165 6.6216 14.2901 6.94066 14.1341 7.22302C13.8609 7.72278 13.4671 8.05525 13.1205 8.48937C12.8607 8.81266 12.7167 9.19525 12.4337 9.50443L12.4125 9.52772C11.6649 10.3127 10.4847 10.4962 9.50212 10.8315C9.14918 10.9529 5.32189 12.04 5.32189 12.2771C5.32189 12.2256 4.94706 11.8536 4.47483 11.4011C2.78071 9.79243 2.22377 7.30702 3.23177 5.17525C4.3153 2.88113 6.776 1.24419 9.11953 0.457839C9.85224 0.212192 10.6838 0.0470156 11.3784 0.387251C12.0729 0.727486 12.4188 1.78278 11.8428 2.29807C12.2051 2.02398 12.6557 1.89304 13.1085 1.93031C13.5267 1.95651 13.921 2.13388 14.2181 2.42937C14.4535 2.66577 14.6226 2.95981 14.7087 3.28207C14.7725 3.52047 14.7855 3.76963 14.7468 4.01337Z"
+                              fill="#845161" />
+                            <path
+                              d="M14.7467 4.01341C14.7403 4.05506 14.7326 4.096 14.7234 4.13694C14.717 4.14894 14.7107 4.16165 14.7043 4.17577C14.6246 4.35789 14.5879 4.55412 14.4926 4.73624L14.4869 4.74612C14.4467 4.81671 14.4036 4.8873 14.357 4.95789C14.2346 5.13997 14.0997 5.31333 13.9533 5.47671L13.8636 5.57341C13.805 5.63906 13.7457 5.7033 13.6864 5.76683C14.0006 5.69624 14.3048 5.98918 14.3606 6.30541C14.4163 6.62165 14.29 6.94071 14.134 7.22306C13.8608 7.72283 13.4669 8.0553 13.1203 8.48941C12.8606 8.81271 12.7166 9.1953 12.4335 9.50447C12.1049 9.11368 11.8956 8.63658 11.8307 8.13012C11.7149 7.19412 11.7855 6.17412 11.7537 5.22683C11.734 4.63106 11.542 4.52094 11.8991 4.03883C12.1864 3.68448 12.5186 3.36911 12.8874 3.10071C13.1754 2.91083 13.546 2.88118 13.8897 2.92989C14.1893 2.97085 14.4719 3.09289 14.7071 3.28283C14.7713 3.5209 14.7848 3.7698 14.7467 4.01341Z"
+                              fill="#69303A" />
+                            <ellipse
+                              cx="4.61504"
+                              cy="9.45586"
+                              rx="1.2"
+                              ry="1.2"
+                              fill="#F2A196" />
+                            <ellipse
+                              cx="4.99574"
+                              cy="9.4557"
+                              rx="1.07435"
+                              ry="1.07435"
+                              fill="#E88870" />
+                            <path
+                              d="M5.01172 8.32642L5.3209 12.2088L10.0108 15.0944C10.6844 15.3454 11.4385 15.0435 11.7529 14.397C12.1102 13.6676 12.42 12.9159 12.6804 12.1467C12.8668 11.5932 13.0489 11.025 13.0665 10.4363C13.0842 9.8476 12.9169 9.2363 12.7136 8.69277C12.6924 8.6356 12.5795 8.45983 12.5894 8.39983C12.668 7.92925 12.7461 7.46007 12.8237 6.9923C12.9127 6.46219 13.0263 5.90877 12.8943 5.37583C12.744 4.76454 12.2823 4.50407 11.9025 4.04736C10.903 5.33489 9.25972 6.06266 7.82466 6.8003C7.08701 7.18148 5.01172 8.32642 5.01172 8.32642Z"
+                              fill="#F2A196" />
+                            <path
+                              d="M12.8098 11.7498C12.5055 12.9441 12.1688 14.1745 11.9182 14.6164C11.7305 14.946 11.4686 15.0095 11.0542 15.1105C10.0148 15.3484 8.92328 15.1176 8.06905 14.4794L5.30975 12.2573C5.2674 11.8415 5.23916 11.778 5.21869 11.3601C5.20881 11.1709 5.14811 10.9818 5.19328 10.7954C5.20569 10.8933 5.24753 10.9851 5.31328 11.0587C5.64717 11.5119 6.03681 12.0236 6.59164 12.21C7.17046 12.4041 7.82905 12.4345 8.38811 12.1606C8.87446 11.922 9.35093 11.6107 9.85846 11.4145C10.196 11.2751 10.5603 11.2122 10.925 11.2302C11.4432 11.2655 11.6648 11.4992 12.0439 11.8076C12.1681 11.9093 12.3072 12.0152 12.4674 12.0194C12.6481 12.0159 12.6573 11.8662 12.8098 11.7498Z"
+                              fill="#845161" />
+                            <path
+                              d="M8.47918 8.1709C8.90977 8.1709 8.90977 8.83302 8.47918 8.83655H8.45942C8.02883 8.83655 8.02883 8.17443 8.45942 8.1709H8.47918Z"
+                              fill="#111111" />
+                            <path
+                              d="M12.017 8.07275C12.4172 8.07628 12.4172 8.68687 12.017 8.6904H11.9994C11.5998 8.6904 11.5998 8.07628 11.9994 8.07275H12.017Z"
+                              fill="#111111" />
+                            <path
+                              d="M10.273 7.97949C10.2674 8.0042 11.2161 10.5298 11.2161 10.5298L9.94971 10.5913"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M7.27441 7.49102C7.9279 7.35609 8.60003 7.33722 9.26006 7.43526"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M11.4424 7.49899C11.8458 7.4054 12.2616 7.37657 12.6741 7.41358"
+                              stroke="#111111"
+                              stroke-width="0.3" />
+                            <path
+                              d="M9.87678 11.9265C10.2735 12.0637 10.7035 12.0716 11.105 11.9491C11.1481 11.9357 11.1297 11.8672 11.0867 11.8785C10.6975 11.9977 10.2804 11.9901 9.89583 11.8566C9.85278 11.8418 9.83442 11.9095 9.87678 11.9272V11.9265Z"
+                              fill="#F2A196" />
+                          </svg>
+                          <span>Manuel Caldas</span>
+                        </li>
+                        <li class="active-feedback avial">
+                          <button>Feedback</button>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 16 16"
+                            fill="none">
+                            <g clip-path="url(#clip0_883_31843)">
+                              <path
+                                d="M7.66666 5.33321L8.66666 5.33321L8.66666 9.33321L5.5 11.2332L5 10.4132L7.66666 8.83321L7.66666 5.33321ZM4.442 1.20654L1.37066 3.76988L2.224 4.79321L5.29733 2.23121L4.442 1.20654ZM11.558 1.20654L10.7033 2.23054L13.7753 4.79321L14.6287 3.76921L11.558 1.20654ZM8 2.66654C11.3133 2.66654 14 5.35321 14 8.66654C14 11.9799 11.3133 14.6665 8 14.6665C4.68666 14.6665 2 11.9799 2 8.66654C2 5.35321 4.68666 2.66654 8 2.66654ZM8 13.3332C10.5733 13.3332 12.6667 11.2399 12.6667 8.66654C12.6667 6.09321 10.5733 3.99988 8 3.99988C5.42666 3.99988 3.33333 6.09321 3.33333 8.66654C3.33333 11.2399 5.42666 13.3332 8 13.3332Z"
+                                fill="#CCCCCC" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_883_31843">
+                                <rect
+                                  width="16"
+                                  height="16"
+                                  fill="white"
+                                  transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                          <span>2h</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="cert-list">
+                      <div class="list-cont">
+                        <ul>
+                          <li class="f-col">
+                            <button class="option">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none">
+                                <g clip-path="url(#clip0_670_80084)">
+                                  <path
+                                    d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
+                                    fill="#555555" />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_670_80084">
+                                    <rect
+                                      width="24"
+                                      height="24"
+                                      fill="white"
+                                      transform="matrix(-1 8.74228e-08 8.74228e-08 1 24 0)" />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </button>
+                            <span class="option-tag"
+                              >Termo de participação em audiência</span
+                            >
+                          </li>
+                          <li class="s-col">
+                            <span class="f-notification">1 em análise </span>
+                            <span class="s-notification">2 indeferido(s)</span>
+                            <span class="t-notification">1 deferido(s)</span>
+                          </li>
+                          <li class="t-col">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none">
+                              <g clip-path="url(#clip0_670_80096)">
+                                <path
+                                  d="M11.0599 5.05337L6.66658 9.44671L4.27325 7.06004L3.33325 8.00004L6.66658 11.3334L11.9999 6.00004L11.0599 5.05337ZM7.99992 1.33337C4.31992 1.33337 1.33325 4.32004 1.33325 8.00004C1.33325 11.68 4.31992 14.6667 7.99992 14.6667C11.6799 14.6667 14.6666 11.68 14.6666 8.00004C14.6666 4.32004 11.6799 1.33337 7.99992 1.33337ZM7.99992 13.3334C5.05325 13.3334 2.66658 10.9467 2.66658 8.00004C2.66659 5.05337 5.05325 2.66671 7.99992 2.66671C10.9466 2.66671 13.3333 5.05338 13.3333 8.00004C13.3333 10.9467 10.9466 13.3334 7.99992 13.3334Z"
+                                  fill="#B4B4B4" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_670_80096">
+                                  <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+
+                            <div class="col-info">
+                              <span>1 de 3 certificado(s)</span>
+                              <span>validado(s)</span>
+                            </div>
+                          </li>
+                          <li class="fr-col">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none">
+                              <g clip-path="url(#clip0_670_80091)">
+                                <path
+                                  d="M7.66691 5.33333L8.66691 5.33333L8.66691 9.33333L5.50024 11.2333L5.00024 10.4133L7.66691 8.83333L7.66691 5.33333ZM4.44224 1.20667L1.37091 3.77L2.22424 4.79333L5.29757 2.23133L4.44224 1.20667ZM11.5582 1.20667L10.7036 2.23067L13.7756 4.79333L14.6289 3.76933L11.5582 1.20667ZM8.00024 2.66667C11.3136 2.66667 14.0002 5.35333 14.0002 8.66667C14.0002 11.98 11.3136 14.6667 8.00024 14.6667C4.68691 14.6667 2.00024 11.98 2.00024 8.66667C2.00024 5.35333 4.68691 2.66667 8.00024 2.66667ZM8.00024 13.3333C10.5736 13.3333 12.6669 11.24 12.6669 8.66667C12.6669 6.09333 10.5736 4 8.00024 4C5.42691 4 3.33357 6.09333 3.33357 8.66667C3.33357 11.24 5.42691 13.3333 8.00024 13.3333Z"
+                                  fill="#CCCCCC" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_670_80091">
+                                  <rect
+                                    width="16"
+                                    height="16"
+                                    fill="white"
+                                    transform="matrix(-1 8.74228e-08 8.74228e-08 1 16 0)" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                            <div class="col-info">
+                              <span>6 de 12 hora(s)</span>
+                              <span>validadas</span>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
