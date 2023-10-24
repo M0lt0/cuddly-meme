@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./multi-upload.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="model-body">
+      <div class="model-header">
+        <span> Enviar vários certificados </span>
+        <span class="material-icons-outlined"> clear </span>
+      </div>
+      <div class="model-list-info">
+        <ul>
+          <li class="flex1">
+            Data <span class="material-icons-outlined">switch_left</span>
+          </li>
+          <li class="flex1">
+            Hora <span class="material-icons-outlined">switch_left</span>
+          </li>
+          <li class="flex1">
+            Turma <span class="material-icons-outlined">switch_left</span>
+          </li>
+          <li class="flex1">
+            Professor(es)
+            <span class="material-icons-outlined">switch_left</span>
+          </li>
+          <li class="flex1">
+            Vagas disponíveis
+            <span class="material-icons-outlined">switch_left</span>
+          </li>
+        </ul>
+      </div>
+      <div class="model-list-items">
+        <div class="item-body">
+          <ul>
+            <li class="flex1"><b>03/08/2023</b> quinta-feira</li>
+
+            <li class="flex1">
+              <span>
+                <span class="icon material-icons-outlined">alarm</span>
+                08:00 - 12:00
+              </span>
+            </li>
+
+            <li class="flex1">
+              <a
+                href="http://localhost.bonsae.com.br/disciplina/36"
+                style="color: #1161d8">
+                Turma Teste Agenda
+              </a>
+            </li>
+
+            <li class="flex1">Equipe_Bonsae</li>
+
+            <li class="flex1">
+              <span class="ball"> 8 / 10 </span>
+            </li>
+
+            <li class="abs">
+              <div class="dropdown">
+                <button
+                  class="dropdown-toggle"
+                  type="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false">
+                  <span class="material-icons-outlined">more_vert</span>
+                </button>
+                <div class="dropdown-menu" style="margin-left: -50px">
+                  <a
+                    class="dropdown-item"
+                    href="javascript:void(0);"
+                    onclick="view('plantao',266);">
+                    <span class="icon material-icons-outlined">folder </span>
+                    Acessar
+                  </a>
+
+                  <div class="line"></div>
+
+                  <a
+                    class="dropdown-item"
+                    href="javascript:void(0);"
+                    onclick="view('add-student-shift',266)">
+                    <span class="icon material-icons-outlined">add</span> Aluno
+                  </a>
+
+                  <a
+                    class="dropdown-item"
+                    href="javascript:void(0);"
+                    onclick="edit('plantao',266);">
+                    <span class="icon material-icons-outlined">edit</span>
+                    Editar
+                  </a>
+
+                  <form
+                    method="POST"
+                    action="http://localhost.bonsae.com.br/plantao/266"
+                    onsubmit="return ConfirmDestruction();">
+                    <input type="hidden" name="_method" value="DELETE" />
+                    <input
+                      type="hidden"
+                      name="_token"
+                      value="i5RN9bKJshEzxliIJe2uytpITbtG382SXL1Mcspp" />
+                    <button
+                      class="dropdown-item del webkit-navagator"
+                      type="submit">
+                      <span class="icon material-icons-two-tone">delete</span
+                      >Deletar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="module-footer">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <input
+              type="submit"
+              value="Cancelar"
+              class="bt bt-border-bluelinght-1 bt-radius"
+              data-dismiss="modal"
+              aria-label="Close" />
+          </div>
+          <div class="col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-4">
+            <input type="submit" value="Salvar" class="bt bt-blue bt-radius" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
