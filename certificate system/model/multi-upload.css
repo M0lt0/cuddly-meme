@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: var(--text-section, #333);
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 109.091% */
+}
+
+.model-body {
+    position: relative;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 1376px;
+    height: 836px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: var(--background-neutral, #FFF);
+
+    /* Shadow/Large */
+    box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
+}
+
+.model-header {
+    display: flex;
+    width: 1323px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 262px;
+    height: 24px;
+    border: 2px solid black;
+}
+
+.model-list-info {
+    width: 1323px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--neutral-gray-50, #F1F1F1);
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: self-end;
+
+
+}
+
+.model-list-info ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.model-list-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-body {
+    width: 1320px;
+    height: 96px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--background-neutral, #FFF);
+    display: flex;
+    flex-direction: row;
+}
+
+.item-body ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.module-footer {
+    position: relative;
+    display: flex;
+    width: 1376px;
+    padding: 19px 44px 21px 44px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 24px 24px;
+    background: var(--neutral-gray-10, #F6F6F6);
+    top: 525px;
+
+}
