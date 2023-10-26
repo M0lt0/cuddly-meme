@@ -211,6 +211,8 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    position: relative;
+    right: 260px;
 
 }
 
