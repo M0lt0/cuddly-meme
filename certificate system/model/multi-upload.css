@@ -14,6 +14,30 @@ body {
     /* 109.091% */
 }
 
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v140/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
 .model-body {
     position: relative;
     padding: 24px;
@@ -121,4 +145,29 @@ body {
     background: var(--neutral-gray-10, #F6F6F6);
     top: 525px;
 
+}
+
+.first-colum {
+    display: flex;
+    width: 288px;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.sec-colum {
+    width: 135px;
+    height: 22px;
+    margin-left: 90px;
+}
+
+.third-colum {
+    width: 133px;
+    height: 22px;
+    margin-left: 268px;
+}
+
+.material-icons-outlined {
+    transform: rotateX(180);
 }
