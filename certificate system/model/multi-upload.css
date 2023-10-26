@@ -172,7 +172,7 @@ body {
     align-items: center;
     border-radius: 0px 0px 24px 24px;
     background: var(--neutral-gray-10, #F6F6F6);
-    top: 480px;
+    top: 415px;
     right: 24px;
 
 }
@@ -260,4 +260,21 @@ button {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #FB7B05;
+    width: 435px;
+    height: 56px;
+    top: 435px;
+    left: 415px;
+    z-index: 10;
+
 }
