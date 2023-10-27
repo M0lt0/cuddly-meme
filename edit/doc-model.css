@@ -14,7 +14,7 @@ body {
 
 }
 
-.container {
+.container-doc-model {
     display: flex;
     width: 800px;
     height: 400px;
@@ -29,7 +29,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
 }
 
-.heder {
+.heder-doc-model {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -50,12 +50,12 @@ hr {
     height: 1px;
 }
 
-.heder button {
+.heder-doc-model button {
     background: none;
     border: none;
 }
 
-.msg-container {
+.msg-container-doc-model {
     display: flex;
     width: 752px;
     height: 289px;
