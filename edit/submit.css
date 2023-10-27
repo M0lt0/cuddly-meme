@@ -14,7 +14,7 @@ body {
 
 }
 
-.container {
+.container-submit {
     width: 800px;
     height: 400px;
     flex-shrink: 0;
@@ -25,7 +25,7 @@ body {
     margin-top: 100px;
 }
 
-.header {
+.header-submit {
     display: flex;
     flex-direction: row;
     width: auto;
@@ -35,7 +35,7 @@ body {
     margin: 24px;
 }
 
-.message {
+.message-submit {
     color: var(--neutral-white, #FFF);
     font-family: Nunito;
     font-size: 22px;
@@ -45,7 +45,7 @@ body {
     /* 109.091% */
 }
 
-.close {
+.close-submit {
     width: 24px;
     height: 24px;
     position: relative;
@@ -55,7 +55,7 @@ body {
     background: none;
 }
 
-.file-icon {
+.file-icon-submit {
     width: 184.483px;
     height: 96px;
     display: flex;
@@ -64,7 +64,7 @@ body {
     width: auto;
 }
 
-.pragraph {
+.pragraph-submit {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -74,7 +74,7 @@ body {
     margin-top: 32px;
 }
 
-.top-pragraph {
+.top-pragraph-submit {
     color: var(--neutral-white, #FFF);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -87,7 +87,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.btm-pragraph {
+.btm-pragraph-submit {
     color: var(--feedback-error-light, #FEE);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;

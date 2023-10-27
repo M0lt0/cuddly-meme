@@ -17,7 +17,7 @@ body {
 
 }
 
-.container {
+.container-user-cert {
     margin-top: 20px;
     width: 90%;
     height: 836px;
@@ -32,7 +32,7 @@ body {
     box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
-.header {
+.header-user-cert {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -48,12 +48,12 @@ hr {
     border: none;
 }
 
-.header button {
+.header-user-cert button {
     background: none;
     border: none;
 }
 
-.user-info {
+.user-info-user-cert {
     width: 100%;
     height: 95px;
     flex-shrink: 0;
@@ -65,7 +65,7 @@ hr {
     padding: 24px;
 }
 
-.info {
+.info-user-cert {
     width: 100%px;
     height: 56px;
     flex-shrink: 0;
@@ -78,7 +78,7 @@ hr {
     align-items: center;
 }
 
-.info ul {
+.info-user-cert ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +89,7 @@ hr {
 }
 
 
-.f-item {
+.f-item-user-cert {
     width: 100%;
     height: 96px;
     flex-shrink: 0;
@@ -103,7 +103,7 @@ hr {
 
 }
 
-.f-item ul {
+.f-item-user-cert ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,7 +115,7 @@ hr {
 
 }
 
-.f-item li {
+.f-item-user-cert li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -123,7 +123,7 @@ hr {
 
 }
 
-.item-name {
+.item-name-user-cert {
     display: flex;
     width: 356px;
     padding: 16px 24px;
@@ -136,7 +136,7 @@ hr {
 
 }
 
-.doc-name {
+.doc-name-user-cert {
     width: 308px;
     display: flex;
     flex-direction: row;
@@ -145,7 +145,7 @@ hr {
 
 }
 
-.doc-name span {
+.doc-name-user-cert span {
     color: var(--text-section, #333);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Nunito;
@@ -156,7 +156,7 @@ hr {
     flex: 1 0 0;
 }
 
-.item-name span {
+.item-name-user-cert span {
     color: var(--text-subtitle, #555);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Nunito;
@@ -167,7 +167,7 @@ hr {
     width: 248px;
 }
 
-.period {
+.period-user-cert {
     display: inline-flex;
     padding: 12px 16px;
     flex-direction: column;
@@ -177,7 +177,7 @@ hr {
     border: 1px solid var(--border-light, #DDD);
 }
 
-.time {
+.time-user-cert {
     display: inline-flex;
     padding: 12px 16px;
     flex-direction: column;
@@ -189,7 +189,7 @@ hr {
     height: 46px;
 }
 
-.feedback {
+.feedback-user-cert {
     display: flex;
     padding: 8px 24px;
     justify-content: center;
@@ -201,7 +201,7 @@ hr {
     height: 48px;
 }
 
-.feedback-btn {
+.feedback-btn-user-cert {
     border: none;
     color: var(--action-light-primary, #1161D8);
     text-align: center;
@@ -220,7 +220,7 @@ hr {
 
 }
 
-.status-list {
+.status-list-user-cert {
     display: flex;
     padding: 12px;
     flex-direction: column;
@@ -240,20 +240,20 @@ hr {
     background: none;
 }
 
-.status-list button {
+.status-list-user-cert button {
     border: none;
     background: none;
 }
 
 
-.user-name {
+.user-name-user-cert {
     display: flex;
     flex-direction: column;
     margin-left: 19px;
 
 }
 
-.user-type {
+.user-type-user-cert {
     color: var(--text-lead, #888);
     text-align: left;
     font-family: Nunito;
@@ -263,7 +263,7 @@ hr {
     line-height: normal;
 }
 
-.date {
+.date-user-cert {
     display: flex;
     gap: 12px;
     flex-direction: row;
@@ -279,12 +279,12 @@ hr {
     /* 150% */
 }
 
-.approvel-date {
+.approvel-date-user-cert {
     gap: 6px;
     display: flex;
 }
 
-.date-msg {
+.date-msg-user-cert {
     color: var(--text-lead, #888);
     text-align: center;
     font-family: Nunito;
@@ -296,7 +296,7 @@ hr {
 
 }
 
-.notification {
+.notification-user-cert {
     display: flex;
     padding: 8px 16px;
     align-items: center;
@@ -316,23 +316,23 @@ hr {
 }
 
 
-.info-selector {
+.info-selector-user-cert {
     align-items: center;
     display: flex;
     gap: 8px;
     width: 288px;
 }
 
-.info-selector button {
+.info-selector-user-cert button {
     border: none;
     background: none;
 }
 
-.info-type {
+.info-type-user-cert {
     width: 206px;
 }
 
-.status {
+.status-user-cert {
     width: 232px;
     height: 48px;
     border-radius: 12px;
@@ -348,7 +348,7 @@ button:hover {
     cursor: pointer;
 }
 
-.left {
+.left-user-cert {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -356,7 +356,7 @@ button:hover {
     width: 200px;
 }
 
-.right {
+.right-user-cert {
     display: flex;
     width: 647px;
     align-items: center;

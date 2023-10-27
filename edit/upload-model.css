@@ -14,7 +14,7 @@ body {
 
 }
 
-.container {
+.container-upload-model {
     width: 800px;
     height: 400px;
 
@@ -24,7 +24,7 @@ body {
     box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
-.header {
+.header-upload-model {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -37,7 +37,7 @@ body {
     margin-bottom: 43px;
 }
 
-.header button {
+.header-upload-model button {
     display: flex;
     background: none;
     border: none;
@@ -45,7 +45,7 @@ body {
     height: 24px;
 }
 
-.upload-rect {
+.upload-rect-upload-model {
     width: 752px;
     height: 289px;
     flex-shrink: 0;
@@ -60,7 +60,7 @@ body {
 
 }
 
-.icon {
+.icon-upload-model {
     display: inline-flex;
     padding: 8px 16px;
     align-items: flex-start;
@@ -70,8 +70,8 @@ body {
     margin-bottom: 16px;
 }
 
-.f-mes,
-.s-mes {
+.f-mes-upload-model,
+.s-mes-upload-model {
     color: var(--text-section, #333);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -85,7 +85,7 @@ body {
     display: flex;
 }
 
-.s-mes {
+.s-mes-upload-model {
     color: var(--text-lead, #888);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -96,7 +96,7 @@ body {
     line-height: normal;
 }
 
-.f-mes {
+.f-mes-upload-model {
     color: var(--text-section, #333);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -107,7 +107,7 @@ body {
     line-height: normal;
 }
 
-.t-mes {
+.t-mes-upload-model {
     color: var(--text-lead, #888);
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -118,7 +118,7 @@ body {
     line-height: normal;
 }
 
-.counter {
+.counter-upload-model {
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -14,7 +14,7 @@ body {
 
 }
 
-.header {
+.header-suc-up {
     display: flex;
     width: 752px;
     justify-content: space-between;
@@ -28,12 +28,12 @@ body {
     /* 109.091% */
 }
 
-.header button {
+.header-suc-up button {
     background: none;
     border: none;
 }
 
-.file-container {
+.file-container-suc-up {
     width: 752px;
     height: 289px;
     flex-shrink: 0;
@@ -46,7 +46,7 @@ body {
 }
 
 
-.container {
+.container-suc-up {
     width: 800px;
     height: 560px;
     flex-shrink: 0;
@@ -61,7 +61,7 @@ body {
     box-shadow: 0px 15px 35px 0px rgba(103, 110, 118, 0.08), 0px 5px 15px 0px rgba(0, 0, 0, 0.12);
 }
 
-.user-info {
+.user-info-suc-up {
     display: inline-flex;
     padding: 4px 12px 4px 4px;
     align-items: center;
@@ -70,7 +70,7 @@ body {
     background: var(--neutral-gray-10, #F6F6F6);
 }
 
-.user-avtar {
+.user-avtar-suc-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,7 +78,7 @@ body {
     height: 24px;
 }
 
-.user-avtar svg {
+.user-avtar-suc-up svg {
     display: flex;
     width: 17.455px;
     height: 20.727px;
@@ -94,7 +94,7 @@ body {
 
 
 
-.footer {
+.footer-suc-up {
     width: 752px;
     height: 95px;
     flex-shrink: 0;
