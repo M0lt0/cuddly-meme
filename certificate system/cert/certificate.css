@@ -1,4 +1,4 @@
-.container-me {
+.container-prof {
     border-radius: 24px 24px 0px 0px;
     background: var(--academy-50, #EBF7FF);
     height: 220vh;
@@ -399,14 +399,14 @@
 
 
 
-.col-info {
+.col-info-prof {
     display: flex;
     flex-direction: column;
 }
 
 
 
-.cert-list-header {
+.cert-list-header-prof {
     border-radius: 8px;
     background: var(--action-light-primary, #1161D8);
     height: 96px;
@@ -414,14 +414,14 @@
     justify-content: center;
 }
 
-.cert-active-status {
+.cert-active-status-prof {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-.cert-active-status ul {
+.cert-active-status-prof ul {
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid var(--border-light, #DDD);
@@ -433,7 +433,7 @@
 
 }
 
-.cert-active-status ul li {
+.cert-active-status-prof ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -442,14 +442,14 @@
 
 }
 
-.doc-name {
+.doc-name-prof {
     width: 280px;
     gap: 8px;
     display: flex;
     flex-direction: row;
 }
 
-.upload-info {
+.upload-info-prof {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -458,7 +458,7 @@
 
 }
 
-.upload-area {
+.upload-area-prof {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -471,7 +471,7 @@
     margin: 24px;
 }
 
-.activation-state {
+.activation-state-prof {
     display: flex;
     padding: 8px 16px;
     align-items: center;
@@ -482,7 +482,7 @@
     height: 35px;
 }
 
-.user-active span {
+.user-active-prof span {
     color: var(--text-subtitle, #555);
     text-align: center;
     font-family: Nunito;
@@ -492,7 +492,7 @@
     line-height: 22px;
 }
 
-.active-feedback {
+.active-feedback-prof {
     display: flex;
     padding: 4px 24px;
     justify-content: center;
@@ -504,7 +504,7 @@
     height: 24px;
 }
 
-.inactive-feedback {
+.inactive-feedback-prof {
     display: inline-flex;
     padding: 4px 24px;
     justify-content: center;
@@ -514,13 +514,13 @@
     background: #E5E5E5;
 }
 
-.active-feedback button,
-.inactive-feedback button {
+.active-feedback-prof button,
+.inactive-feedback-prof button {
     background: none;
 }
 
 
-.upload-icon {
+.upload-icon-prof {
     display: flex;
     padding: 8px 16px;
     align-items: flex-start;
@@ -529,14 +529,14 @@
     background: var(--academy-100, #D9EFFF);
 }
 
-.docs-list {
+.docs-list-prof {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
 }
 
-.mb-size {
+.mb-size-prof {
     position: relative;
     bottom: 35px;
     left: 555px;
@@ -546,7 +546,7 @@
     gap: 8px;
 }
 
-.upload-text {
+.upload-text-prof {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -555,7 +555,7 @@
     gap: 4px;
 }
 
-.f-ch {
+.f-ch-prof {
     color: var(--text-section, #333);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Nunito;
@@ -565,7 +565,7 @@
     line-height: normal;
 }
 
-.s-ch {
+.s-ch-prof {
     color: var(--text-lead, #888);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Nunito;
@@ -575,17 +575,17 @@
     line-height: normal;
 }
 
-.green-me {
+.green-me-prof {
     border-radius: 8px;
     background: var(--feedback-sucess-light, #EBF5EC);
 }
 
-.red-me {
+.red-me-prof {
     border-radius: 8px;
     background: var(--feedback-error-light, #FEE);
 }
 
-.avial {
+.avial-prof {
     border-radius: 80px;
     border: 1px solid var(--action-light-primary, #1161D8);
     display: inline-flex;
@@ -596,17 +596,17 @@
     background: none;
 }
 
-.active-green {
+.active-green-prof {
     border-radius: 8px;
     background: var(--feedback-sucess-light, #EBF5EC);
 }
 
-.active-red {
+.active-red-prof {
     border-radius: 8px;
     background: var(--feedback-error-light, #FEE);
 }
 
-.search-label {
+.search-label-prof {
     width: 339px;
     height: 48px;
     flex-shrink: 0;
@@ -615,13 +615,13 @@
     background: var(--background-neutral, #FFF);
 }
 
-.prof-filter {
+.prof-filter-prof {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
-.filter-area {
+.filter-area-prof {
     display: flex;
     padding: 8px 16px;
     justify-content: center;
@@ -631,7 +631,7 @@
     border: 1px solid var(--border-light, #DDD);
 }
 
-.f-col-prof {
+.f-col-prof-prof {
     display: flex;
     width: 312px;
     align-items: center;
@@ -639,14 +639,14 @@
     flex-direction: row;
 }
 
-.prof-option-ifo {
+.prof-option-ifo-prof {
     display: flex;
     width: 312px;
     align-items: center;
     gap: 12px;
 }
 
-.student-info {
+.student-info--prof {
     display: flex;
     flex-direction: column;
     justify-content: center;
