@@ -254,6 +254,8 @@ body {
     gap: 24px;
     border-radius: 80px;
     background: var(--action-dark-neutral, #EEE);
+    width: 122px;
+    height: 40px;
 }
 
 button {
