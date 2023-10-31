@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.feedback-doc-model {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    border: 1px solid var(--neutral-white-dark, #EEE);
+    background: var(--background-neutral, #FFF);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.08), 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+}
+
+.heder-feedback-model {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    color: var(--text-section, #333);
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 109.091% */
+}
+
+hr {
+    border: 1px solid #DDD;
+    width: 100%;
+    height: 1px;
+}
+
+.heder-feedback-model button {
+    background: none;
+    border: none;
+}
+
+.msg-container-feedback {
+    display: flex;
+    height: 232px;
+    padding: 16px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 8px;
+    background: var(--academy-10, #F5F9FF);
+    color: var(--text-highlight, #555);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.5px;
+}
+
+.student-feedback {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 752px;
+}
+
+button:hover {
+    cursor: pointer;
+}
