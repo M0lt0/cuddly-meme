@@ -414,6 +414,14 @@ button:hover {
     border-radius: 80px;
     background: var(--action-dark-neutral, #EEE);
     border: none;
+    color: var(--action-dark-contrast, #333);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
 }
 
 .feed-back-btn-save {
@@ -425,4 +433,12 @@ button:hover {
     border-radius: 80px;
     background: var(--action-light-primary, #1161D8);
     border: none;
+    color: var(--action-light-contrast, #FFF);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
 }
